@@ -43,13 +43,13 @@ https://docs.google.com/spreadsheets/d/1i1nFE0GUCHQS0eWjPuUmYbdtEbeF0Pb-/edit#gi
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
 _The **NookDepot** MVP
--have User Authentication 
--have a page showing materials, tools, gardening, and services
--have a details page where you can press a button to add to a section in the shop 
--have a details page about services 
--have a directory showing each User's Shop
+-have User Authentication<br>
+-have a page showing materials, tools, gardening, and services<br>
+-have a details page where you can press a button to add to a section in the shop<br>
+-have a details page about services<br> 
+-have a directory showing each User's Shop<br>
 -Have an editable profile page and delete info as well. 
--have a search bar up and running 
+-have a search bar up and running<br> 
 
 <br>
 
@@ -85,7 +85,6 @@ https://www.figma.com/file/yndvqMNVycFNhx3JLVGJik/NookDepot?node-id=0%3A1
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
 https://whimsical.com/BfKDAfL62NMd3n59sWsmkB
 (Structure for React?)
 
@@ -97,13 +96,34 @@ https://whimsical.com/BfKDAfL62NMd3n59sWsmkB
 
 src
 |__ assets/
-      |__ fonts
-      |__ graphics
       |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
-|__ services/
+      |__ Navigation.jsx
+      |__ Footer.jsx
+      |__ Search.jsx
+      |__ Listings.jsx
+      |__ Services.jsx
+      |__ Tools.jsx
+      |__ Materials.jsx
+      |__ Plants.jsx
+      |__ ServiceDetail.jsx
+      |__ ToolsDetail.jsx
+      |__ MaterialsDetail.jsx
+      |__ PlantsDetail.jsx
+      |__ User.jsx
+      |__ Header.jsx
+|__ containers/
+      |__ Home.jsx
+      |__ Listing.jsx
+      |__ ServicesResults.jsx
+      |__ GardenResults.jsx
+      |__ ToolsReults.jsx
+      |__ MaterialsResults.jsx
+      |__ UnderConstruction.jsx
+      |__ WarningDelete.jsx
+
+
 
 ```
 
