@@ -47,9 +47,9 @@ Also thank you to my friends who provided me with some assets I can use as well!
 -The **NookDepot** MVP<br>
 -have User Authentication<br>
 -have a User page that's a "shop" showing items owned and selling/looking for 
--have a page showing materials, tools, gardening, and services<br>
+-have a page showing materials [Tools, Garden and Services are PMVP]<br>
 -have a details page where you can press a button to add to a section in the shop<br>
--have a details page about services, garden, tools, materials<br> 
+-have a details page about the materials [Tools,Garden,Services are PMVP]<br>
 -have a directory showing each User's Shop<br>
 -Have an editable profile page and delete info as well. 
 -have a search bar up and running<br> 
@@ -149,13 +149,13 @@ src
 |   EmailForm   | functional |   y  |   n  | A little form to stay up to date on the site located on the home page    |
 |  Directory   | functional |   n   |   y  | This will show Directory information via props in the form of a table               |
 |   Services   | functional |   n   |   y   | This will show list of services offered via props, and styled via flexbox|
-|   Tools  | functional |   n   |   y   | This will show list of tools offered via props|
-|    Materials  | functional |   n   |   y   | This will show list of materials offered via props|
-|    Plants   | functional |   n   |   y   | This will show list of plants offered via props|
-|   ServiceDetail  | functional |   n   |   y   | This will show details of services offered via props|
-|   ToolsDetail  | functional |   n   |   y   | This will show details of tools offered via props|
+|   Tools (PMVP) | functional |   n   |   y   | This will show list of tools offered via props|
+|    Materials  (PMVP)| functional |   n   |   y   | This will show list of materials offered via props|
+|    Plants  (PMVP) | functional |   n   |   y   | This will show list of plants offered via props|
+|   ServiceDetail (PMVP) | functional |   n   |   y   | This will show details of services offered via props|
+|   ToolsDetail (PMVP) | functional |   n   |   y   | This will show details of tools offered via props|
 |   MaterialsDetail  | functional |   n   |   y   | This will show details of materials offered via props|
-|   PlantsDetail  | functional |   n   |   y   | This will show details of plants offered via props|
+|   PlantsDetail (PMVP)  | functional |   n   |   y   | This will show details of plants offered via props|
 |   UserTownInfo   | functional |   n   |   y   | This Component will show User's InGame Town Information via props|
 |   UserServices Info  | functional |   n   |   y   | This Component will show User's Services information via props|
 |  ForSaleandWanted  | functional |   n   |   y   | This Component will show User's items added  for sale and wantedInformation via props|
@@ -170,8 +170,8 @@ src
 | Implement Backend    |    H     |    2     |    TBD    |    TBD   |
 | Backend CRUD  |    H     |     2  |     TBD    |     TBD     |
 | Setup Authentication |    H     |     3  |     TBD    |     TBD     |
-| BackEnd Routes |    H     |     TBD   |     1.5   |     TBD     |
-| FrontEnd Routes|    M     |     TBD   |     2   |     TBD     |
+| BackEnd Routes |    H     |    1.5   |     TBD  |     TBD     |
+| FrontEnd Routes|    M     |     2   |     TBD   |     TBD     |
 | FrontEnd: Work on Layout Screen|    H     |    3  |     TBD    |     TBD     |
 | FrontEnd: Work on Layout Components|    H     |     2  |     TBD    |     TBD     |
 | FrontEnd: Work on Email Form in Home Component|    L    |    1   |     TBD    |     TBD     |
@@ -203,10 +203,10 @@ ERD can be found in the ERDFile Folder.
 ## Post-MVP
 
 
--add Garden, Tools and Services
--implement Discord OAuth (after course)
--on the details page, add in a link to a UserPage offering those items
--implement a chat feature 
+-add Garden, Tools and Services<br>
+-implement Discord OAuth (after course)<br>
+-on the details page, add in a link to a UserPage offering those items<br>
+-implement a chat feature<br>
 
 
 ***
