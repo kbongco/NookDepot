@@ -1,4 +1,4 @@
 class Listing < ApplicationRecord
   belongs_to :user
-  has_many :materials
+  has_and_belongs_to_many :materials
 end
