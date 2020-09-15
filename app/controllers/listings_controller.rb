@@ -1,5 +1,6 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :update, :destroy]
+  before_action :authorize_request, only [:create, :update, :destroy ]
 
   # GET /listings
   def index
@@ -35,6 +36,7 @@ class ListingsController < ApplicationController
 
   # DELETE /listings/1
   def destroy
+    @current_user.listings.find(params[:id])
     @listing.destroy
   end
 
