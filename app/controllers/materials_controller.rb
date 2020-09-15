@@ -13,6 +13,13 @@ class MaterialsController < ApplicationController
     render json: @material
   end
 
+  def add_material_to_listings
+    @listing = Listing.find(params[:listing_id])
+    @material = Material.find(params[:id])
+    @listing.material.push(@material)
+    render json @listing, include :material 
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_material

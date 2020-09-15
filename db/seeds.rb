@@ -6,6 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+admin = User.create(username:'admin', email:'admin@email.com', password:'123456', discord:'#1234NoDiscord')
+
+adminTown = TownInfo.create(InGameName:'admin',
+TownName:'testtown',
+Hemisphere:'Northern',NativeFruit:'Peach',
+user:admin)
+
+adminListing = Listing.create(name:'Admins totes awesome shop',
+link:'no link here'
+)
+puts 'We got some test data'
+
 # services = Service.create([
 #   {
 #     name: "Weeding",
