@@ -83,6 +83,7 @@ CRUD will be achieved in the following places:
 
 https://www.figma.com/file/yndvqMNVycFNhx3JLVGJik/NookDepot?node-id=0%3A1
 (Click through Pages to see the various wireframes for each section of the site come up)
+*Actual screenshots for each of the screens can be found in the FigmaAssets Folder*
 
 
 
@@ -106,14 +107,14 @@ src
       |__ Search.jsx
       |__ EmailForm.jsx
       |__ DirectoryTable.jsx
-      |__ Services.jsx
-      |__ Tools.jsx
-      |__ Materials.jsx
-      |__ Plants.jsx
-      |__ ServiceDetail.jsx
-      |__ ToolsDetail.jsx
+      |__ Services.jsx (PMVP)
+      |__ Tools.jsx (PMVP)
+      |__ Materials.jsx 
+      |__ Plants.jsx (PMVP)
+      |__ ServiceDetail.jsx (PMVP)
+      |__ ToolsDetail.jsx (PMVP)
       |__ MaterialsDetail.jsx
-      |__ PlantsDetail.jsx
+      |__ PlantsDetail.jsx (PMVP)
       |__ UserTownInfo.jsx
       |__ UserServicesInfo.jsx
       |__ ForSaleandWanted.jsx
@@ -124,9 +125,9 @@ src
 |__ screens/
       |__ Home.jsx
       |__ Directory.jsx
-      |__ ServicesResults.jsx
-      |__ GardenResults.jsx
-      |__ ToolsReults.jsx
+      |__ ServicesResults.jsx (PMVP)
+      |__ GardenResults.jsx (PMVP)
+      |__ ToolsReults.jsx (PMVP)
       |__ MaterialsResults.jsx
       |__ UnderConstruction.jsx
       |__ WarningDelete.jsx
@@ -166,24 +167,24 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Implement Backend    |    H     |    TBD     |    TBD    |    TBD   |
-| Backend CRUD  |    H     |     TBD   |     TBD    |     TBD     |
-| Setup Authentication |    H     |     TBD   |     TBD    |     TBD     |
-| BackEnd Routes |    H     |     TBD   |     TBD    |     TBD     |
-| FrontEnd Routes|    M     |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work on Layout Screen|    H     |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work on Layout Components|    H     |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work on Email Form in Home Component|    L    |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work on Directory Screen + Components |    H     |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work Directory CRUD |    H     |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work on Results Component |    L    |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work on Results Details Component |    L    |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work on UserPage Components|    L    |     TBD   |     TBD    |     TBD     |
-| FrontEnd: Work on UserPage CRUD |    H     |     TBD   |     TBD    |     TBD     |
-| Styling |    M    |     TBD   |     TBD    |     TBD     |
-| Testing|    H     |     TBD   |     TBD    |     TBD     |
-| Deployment |    H     |     TBD   |     TBD    |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Implement Backend    |    H     |    2     |    TBD    |    TBD   |
+| Backend CRUD  |    H     |     2  |     TBD    |     TBD     |
+| Setup Authentication |    H     |     3  |     TBD    |     TBD     |
+| BackEnd Routes |    H     |     TBD   |     1.5   |     TBD     |
+| FrontEnd Routes|    M     |     TBD   |     2   |     TBD     |
+| FrontEnd: Work on Layout Screen|    H     |    3  |     TBD    |     TBD     |
+| FrontEnd: Work on Layout Components|    H     |     2  |     TBD    |     TBD     |
+| FrontEnd: Work on Email Form in Home Component|    L    |    1   |     TBD    |     TBD     |
+| FrontEnd: Work on Directory Screen + Components |    H     |     2   |     TBD    |     TBD     |
+| FrontEnd: Work Directory CRUD |    H     |     2.5  |    TBD  |     TBD     |
+| FrontEnd: Work on Results Component |    L    |     2   |     TBD    |     TBD     |
+| FrontEnd: Work on Results Details Component |    L    |     2.5   |     TBD    |     TBD     |
+| FrontEnd: Work on UserPage Components|    L    |     4  |     TBD    |     TBD     |
+| FrontEnd: Work on UserPage CRUD |    H     |     4  |     TBD    |     TBD     |
+| Styling |    M    |     4  |     TBD    |     TBD     |
+| Testing|    H     |     4   |     TBD    |     TBD     |
+| Deployment |    H     |     2  |     TBD    |     TBD     |
+| TOTAL               |          |     43.5 hrs      |     TBD    |     TBD     |
 
 
 
@@ -201,8 +202,9 @@ ERD can be found in the ERDFile Folder.
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
--implement Discord OAuth
+
+-add Garden, Tools and Services
+-implement Discord OAuth (after course)
 -on the details page, add in a link to a UserPage offering those items
 -implement a chat feature 
 
