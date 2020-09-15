@@ -1,5 +1,6 @@
 class ListingsController < ApplicationController
-  before_action :set_listing, only: [:show, :update, :destroy]
+  before_action :set_listing, only: [:show, :update]
+  before_action :authorize_request, only [:create, :update, :destroy ]
 
   # GET /listings
   def index
@@ -26,6 +27,7 @@ class ListingsController < ApplicationController
 
   # PATCH/PUT /listings/1
   def update
+    @listing = @current_user.listings.find(params[:id])
     if @listing.update(listing_params)
       render json: @listing
     else
@@ -35,6 +37,7 @@ class ListingsController < ApplicationController
 
   # DELETE /listings/1
   def destroy
+    @listing = @current_user.listings.find(params[:id])
     @listing.destroy
   end
 

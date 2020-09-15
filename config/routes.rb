@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post '/auth/login', to: 'authentication#login'
+  get '/auth/verify', to: 'authentication#verify'
   resources :materials
   resources :listings
   resources :town_infos
