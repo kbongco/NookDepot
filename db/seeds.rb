@@ -116,6 +116,8 @@ services = Service.create([
 }
 ])
 
+materials = Material
+
 
 
 puts "Services added!"
