@@ -3,11 +3,13 @@
 one:
   name: MyString
   imgURL: MyString
+  notes: MyString
   season: MyString
   listings: one
 
 two:
   name: MyString
   imgURL: MyString
+  notes: MyString
   season: MyString
   listings: two

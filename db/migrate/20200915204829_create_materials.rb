@@ -3,6 +3,7 @@ class CreateMaterials < ActiveRecord::Migration[6.0]
     create_table :materials do |t|
       t.string :name
       t.string :imgURL
+      t.string :notes
       t.string :season
       t.references :listings, null: false, foreign_key: true
 
