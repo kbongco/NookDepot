@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-services = Service.create!([
+services = Service.create([
   {
     name: "Weeding",
     hemisphere: "All",
@@ -368,6 +368,6 @@ materials = Material.create!([{
 
 
 
-puts "We got materialz, yo"
-puts "Services added!"
+puts "We got #{Material.count} materialz, yo"
+puts "We got #{Service.count} Services added!"
 
