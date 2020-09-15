@@ -20,18 +20,17 @@
 
 ## Overview
 
-_**NookDepot**<br>
+**NookDepot**<br>
 Barebones, its an Etsy clone, but getting past that...
 
 With the COVID-19 Pandemic and Quarantine, a lot of people have turned to video games to pass their time in Quarantine. When the pandemic began, 
-Animal Crossing New Horizons was released much to the excitement of the fandom. Being stuck at home all day and being able to own a house on a deserted
-island and able to just fish, catch bugs to pay off their home sounds like the dream. 
-With this release of Animal Crossing, there was an addition of Hemispheres which meant depending on which Hemisphere you are on the animals and materials varied. Take for example right now its Fall here, but if your island is in the Southern Hemisphere, it's Spring there which means variety. Thanks to this, various websites have popped up to help avid-fans get their wish-list furniture and other materials. Unlike other sites, NookDepot focuses more on the DIY Materials, Plants, and Tools. Users will be able to setup a "shop" of materials they want and trade with other Users of the platform. 
+Animal Crossing New Horizons was released much to the excitement of the fandom. Being stuck at home all day to play video games where you can make friends on your island, invite your IRL friends, and making money doing things like fishing, bug catching, so you can have the unattaianble milennial dream of owning a house was a lot of fun and makes the game have such a high replay value.<br> 
+With this release of Animal Crossing, there was an addition of Hemispheres which meant depending on which Hemisphere you are on the animals and materials varied. Take for example right now its Fall here, but if your island is in the Southern Hemisphere, it's Spring there which means variety of critters, fish, and materials. Thanks to this, various websites have popped up to help avid-fans get their wish-list furniture and other materials. Unlike other sites, NookDepot focuses more on the DIY Materials, Plants, and Tools. Users will be able to setup a "shop" of materials they want and trade with other Users of the platform. 
 
 
 **Credits where credit is Due**
-I used the following sites for the dataset/json file and cleaned up the data I used for this project:
-https://github.com/Norviah/animal-crossing
+I used the following sites for the dataset/json file and cleaned up the data I used for this project:<br>
+https://github.com/Norviah/animal-crossing<br>
 https://docs.google.com/spreadsheets/d/1i1nFE0GUCHQS0eWjPuUmYbdtEbeF0Pb-/edit#gid=163065426
 
 Also thank you to my friends who provided me with some assets I can use as well! :) 
@@ -43,14 +42,14 @@ Also thank you to my friends who provided me with some assets I can use as well!
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **NookDepot** MVP<br>
+
+-The **NookDepot** MVP<br>
 -have User Authentication<br>
 -have a User page that's a "shop" showing items owned and selling/looking for 
 -have a page showing materials, tools, gardening, and services<br>
 -have a details page where you can press a button to add to a section in the shop<br>
--have a details page about services<br> 
+-have a details page about services, garden, tools, materials<br> 
 -have a directory showing each User's Shop<br>
 -Have an editable profile page and delete info as well. 
 -have a search bar up and running<br> 
@@ -59,22 +58,21 @@ _The **NookDepot** MVP<br>
 
 ### Goals
 CRUD will be achieved in the following places: 
--Creating a Listing in the Directory, being able to Edit/Delete as well 
--Being able to press a button to add to "listing"
--Creating Town Info and editing it in Profile page 
--Deleting Items from listing 
+-Creating a Listing in the Directory, being able to Edit/Delete as well<br>
+-Creating Town Info and editing it in Profile page<br>
+-Deleting Items from listing<br>
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| Axios            | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | Used for Front End |
+|   React Router   | Used for Linking pages |
+| Axios            | Used for API data  |
 
 
 <br>
@@ -95,8 +93,6 @@ https://whimsical.com/BfKDAfL62NMd3n59sWsmkB
 (Structure for React?)
 
 #### Component Hierarchy
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -142,7 +138,6 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
