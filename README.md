@@ -28,10 +28,13 @@ Animal Crossing New Horizons was released much to the excitement of the fandom. 
 island and able to just fish, catch bugs to pay off their home sounds like the dream. 
 With this release of Animal Crossing, there was an addition of Hemispheres which meant depending on which Hemisphere you are on the animals and materials varied. Take for example right now its Fall here, but if your island is in the Southern Hemisphere, it's Spring there which means variety. Thanks to this, various websites have popped up to help avid-fans get their wish-list furniture and other materials. Unlike other sites, NookDepot focuses more on the DIY Materials, Plants, and Tools. Users will be able to setup a "shop" of materials they want and trade with other Users of the platform. 
 
+
 **Credits where credit is Due**
 I used the following sites for the dataset/json file and cleaned up the data I used for this project:
 https://github.com/Norviah/animal-crossing
 https://docs.google.com/spreadsheets/d/1i1nFE0GUCHQS0eWjPuUmYbdtEbeF0Pb-/edit#gid=163065426
+
+Also thank you to my friends who provided me with some assets I can use as well! :) 
 
 
 
@@ -42,8 +45,9 @@ https://docs.google.com/spreadsheets/d/1i1nFE0GUCHQS0eWjPuUmYbdtEbeF0Pb-/edit#gi
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **NookDepot** MVP
+_The **NookDepot** MVP<br>
 -have User Authentication<br>
+-have a User page that's a "shop" showing items owned and selling/looking for 
 -have a page showing materials, tools, gardening, and services<br>
 -have a details page where you can press a button to add to a section in the shop<br>
 -have a details page about services<br> 
@@ -54,7 +58,11 @@ _The **NookDepot** MVP
 <br>
 
 ### Goals
--To create a functional ecommerce clone using React and Rails! 
+CRUD will be achieved in the following places: 
+-Creating a Listing in the Directory, being able to Edit/Delete as well 
+-Being able to press a button to add to "listing"
+-Creating Town Info and editing it in Profile page 
+-Deleting Items from listing 
 
 <br>
 
@@ -67,8 +75,6 @@ _The **NookDepot** MVP
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
 | Axios            | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 
 <br>
@@ -102,7 +108,8 @@ src
       |__ Navigation.jsx
       |__ Footer.jsx
       |__ Search.jsx
-      |__ Listings.jsx
+      |__ EmailForm.jsx
+      |__ DirectoryTable.jsx
       |__ Services.jsx
       |__ Tools.jsx
       |__ Materials.jsx
@@ -111,17 +118,23 @@ src
       |__ ToolsDetail.jsx
       |__ MaterialsDetail.jsx
       |__ PlantsDetail.jsx
-      |__ User.jsx
-      |__ Header.jsx
+      |__ UserTownInfo.jsx
+      |__ UserServicesInfo.jsx
+      |__ ForSaleandWanted.jsx
 |__ containers/
+      |__ MainContainer/
+|__ containers/
+      |__ Layout.jsx/
+|__ screens/
       |__ Home.jsx
-      |__ Listing.jsx
+      |__ Directory.jsx
       |__ ServicesResults.jsx
       |__ GardenResults.jsx
       |__ ToolsReults.jsx
       |__ MaterialsResults.jsx
       |__ UnderConstruction.jsx
       |__ WarningDelete.jsx
+      |__ User.jsx
 
 
 
@@ -137,7 +150,8 @@ src
 |  Navigation  | functional |   n   |   n   | _Navigation has links to each page       |
 |   Footer     | functional |   n  |   n   | _The footer will contain credits to each github/data site as well as disclaimer     |
 |   Search    | functional |   y  |   y   | A Search bar to find items     |
-|  Listings    | functional |   n   |   y  | This will show Listings information via props in the form of a table               |
+|   EmailForm   | functional |   y  |   n  | A little form to stay up to date on the site located on the home page    |
+|  Directory   | functional |   n   |   y  | This will show Directory information via props in the form of a table               |
 |   Services   | functional |   n   |   y   | This will show list of services offered via props, and styled via flexbox|
 |   Tools  | functional |   n   |   y   | This will show list of tools offered via props|
 |    Materials  | functional |   n   |   y   | This will show list of materials offered via props|
@@ -146,7 +160,9 @@ src
 |   ToolsDetail  | functional |   n   |   y   | This will show details of tools offered via props|
 |   MaterialsDetail  | functional |   n   |   y   | This will show details of materials offered via props|
 |   PlantsDetail  | functional |   n   |   y   | This will show details of plants offered via props|
-|   User   | functional |   n   |   y   | This Component will show User Information via props|
+|   UserTownInfo   | functional |   n   |   y   | This Component will show User's InGame Town Information via props|
+|   UserServices Info  | functional |   n   |   y   | This Component will show User's Services information via props|
+|  ForSaleandWanted  | functional |   n   |   y   | This Component will show User's items added  for sale and wantedInformation via props|
 
 
 #### Time Estimates
@@ -155,11 +171,26 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Implement Backend    |    H     |    TBD     |    TBD    |    TBD   |
+| Backend CRUD  |    H     |     TBD   |     TBD    |     TBD     |
+| Setup Authentication |    H     |     TBD   |     TBD    |     TBD     |
+| BackEnd Routes |    H     |     TBD   |     TBD    |     TBD     |
+| FrontEnd Routes|    M     |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work on Layout Screen|    H     |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work on Layout Components|    H     |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work on Email Form in Home Component|    L    |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work on Directory Screen + Components |    H     |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work Directory CRUD |    H     |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work on Results Component |    L    |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work on Results Details Component |    L    |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work on UserPage Components|    L    |     TBD   |     TBD    |     TBD     |
+| FrontEnd: Work on UserPage CRUD |    H     |     TBD   |     TBD    |     TBD     |
+| Styling |    M    |     TBD   |     TBD    |     TBD     |
+| Testing|    H     |     TBD   |     TBD    |     TBD     |
+| Deployment |    H     |     TBD   |     TBD    |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+
 
 <br>
 
@@ -167,7 +198,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+ERD can be found in the ERDFile Folder. 
 
 <br>
 
@@ -176,6 +207,10 @@ src
 ## Post-MVP
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+-implement Discord OAuth
+-on the details page, add in a link to a UserPage offering those items
+-implement a chat feature 
+
 
 ***
 

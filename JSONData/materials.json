@@ -1,0 +1,253 @@
+[
+  {
+    "name": "Aquarius fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceAquarius.png",
+    "Notes": "Only available during the Aquarius Zodiac, January 20 - February 18",
+    "Season": "Winter/Summer(Southern)"
+  },
+  {
+    "name": "Aries fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceAries.png",
+    "Notes": "Only available during the Aries Zodiac, March 21 - April 19",
+    "Season": "Spring/Fall(Southern)"
+  },
+  {
+    "name":"Acorn",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/DIYAcorn.png",
+    "Notes":"Shaking, Only Available during fall",
+    "Season":"Fall"
+  },
+  {
+    "name": "bamboo piece",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/DIYBamboo.png",
+    "Season": "Year Round"
+  },
+  {
+    "name": "bamboo shoot",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/BanbooShoot.png",
+    "Season": "Year Round"
+  },
+  {
+    "name": "blue ornament",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/ChristmasOrnamentB.png",
+    "Notes": "Shaking decorated trees; Only available during the Festive Season",
+    "Season":"Winter/Summer(Southern) - Festive"
+  },
+  {
+    "name": "Cancer fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceCancer.png",
+    "Notes": "Only available during the Cancer Zodiac, June 22 - July 22",
+    "Season": "Summer/Winter(Southern)"
+  },
+  {
+    "name": "Capricorn fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceCapricornus.png",
+    "Notes": "Only available during the Capricorn Zodiac, December 22 - January 19",
+    "Season":"Winter/Summer(Southern)"
+  },
+  {
+    "name": "cherry-blossom petal",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/Sakurapetal.png",
+    "source": [ "Catching with a net" ],
+    "Notes": "Only available during the Cherry-Blossom Season",
+    "Season": "Spring/Fall(Southern)"
+  },
+  {
+    "name": "clay",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/OreClay.png",
+    "storageImage": "https://acnhcdn.com/latest/FtrIcon/DIYClay.png",
+    "Season":"Year Round"
+  },
+  {
+    "name": "earth egg",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/EggGround.png",
+    "Notes": "Only available during Bunny Day",
+    "Season":"Spring/Fall(Southern) Bunny-Day"
+  },
+  {
+    "name": "elegant mushroom",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/Mush0.png",
+    "Notes": "Only available during Mushroom Season",
+    "Season":"Fall/Spring(Sothern) - Mushroom Season "
+  },
+  {
+    "name": "flat mushroom",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/Mush3.png",
+    "Notes": "Only available during Mushroom Season",
+    "Season":"Fall/Spring(Sothern) - Mushroom Season "
+  },
+  {
+    "name": "Gemini fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceGemini.png",
+    "Notes": "Only available during the Gemini Zodiac, May 21 - June 21",
+    "Season": "Spring/Fall(Southern)"
+  },
+  {
+    "name": "gold nugget",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/Gold_Ore.png",
+    "Season":"Year Round"
+  },
+  {
+    "name": "gold ornament",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/ChristmasOrnamentC.png",
+    "Notes": "Shaking decorated trees; Only available during the Festive Season",
+    "Season":"Winter/Summer(Southern) - Festive"
+  },
+  {
+    "name": "iron nugget",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/OreIron.png",
+    "Season":"Year Round"
+  },
+  {
+    "name": "large star fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarPieceRare.png",
+    "Notes": "Wish on shooting star",
+    "Season":"Year Round"
+  },
+  {
+    "name": "leaf egg",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/EggLeaf.png",
+    "Notes": "Shaking decorated trees; Only available during Bunny Day",
+    "Season":"Spring/Fall(Southern) Bunny-Day"
+  },
+  {
+    "name": "Leo fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceLeo.png",
+    "Notes": "Only available during the Leo Zodiac, July 23 - August 22",
+    "Season": "Summer/Winter(Southern)"
+  },
+  {
+    "name": "Libra fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceLibra.png",
+    "Notes": "Only available during the Libra Zodiac, September 23 - October 23",
+    "Season":"Fall/Spring"
+  },
+  {
+    "name": "Nook Miles Ticket",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/PlaneTicket.png",
+    "Notes": "Found under the Special tab of the Nook Miles Redemption service.",
+    "Season":"Year Round"
+
+  },{
+    "name": "Pisces fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpiecePisces.png",
+    "Notes": "Only available during the Pisces Zodiac, February 19 - March 20",
+    "Season":"Winter/Summer(Southern)"
+  },
+  {
+
+    "name": "maple leaf",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/AutumnLeaf.png",
+    "Notes": "Only available during Maple Leaf Season",
+    "Season":"Fall/Spring(Southern)"
+  },
+  {
+
+    "name": "pine cone",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/DIYPinecone.png",
+    "Notes": "Shaking; Only available during Fall",
+    "Season":"Fall - Both Hemispheres"
+  },
+  {
+
+    "name": "pearl",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/Pearl.png",
+    "Season": "Year Round"
+  },
+  {
+    "name": "rare mushroom",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/Mush4.png",
+    "Notes": "Near cedar and hardwood trees; Only available during Mushroom Season",
+    "Season": "Fall/Spring(Sothern) - Mushroom"
+  },
+  {
+
+    "name": "round mushroom",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/Mush1.png",
+    "Notes": "Only available during Mushroom Season",
+    "Season": "Fall/Spring(Sothern) - Mushroom Season "
+  },
+  {
+
+    "name": "rusted part",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/JohnnyQuestDust1.png",
+    "Season":"Year Round"
+  },
+  {
+    "name": "Sagittarius fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceSagittarius.png",
+    "Notes": "Only available during the Sagittarius Zodiac, November 23 - December 21",
+    "Season": "Fall/Spring(Southern)"
+  },
+  {
+    "name": "Scorpius fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceScorpio.png",
+    "Notes": "Only available during the Scorpius Zodiac, October 24 - November 22",
+    "Season":"Fall/Spring(Southern)"
+  },
+  {
+    "name": "Taurus fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceTaurus.png",
+    "Notes": "Only available during the Taurus Zodiac, April 20 - May 20",
+    "Season": "Spring/Fall(Southern)"
+  },
+  {
+    "name": "skinny mushroom",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/Mush2.png",
+    "Notes": "Only available during Mushroom Season",
+    "Season":"Fall/Spring(Sothern) - Mushroom Season"
+  },
+  {
+    "name": "sky egg",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/EggSky.png",
+    "Notes": "Only available during Bunny Day",
+    "Season": "Spring/Fall(Southern) Bunny-Day"
+
+  },
+  {
+    "name": "snowflake",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/SnowCrystal.png",
+    "Notes": "Only available during Winter",
+    "Season": "Winter/Summer(Southern)"
+  },
+  {
+
+    "name": "softwood",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/DIYWoodSoft.png",
+    "Season": "Year Round"
+
+  },
+  {
+    "name": "large star fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarPieceRare.png",
+    "Season":"Year Round"
+  },
+  {
+    "name": "stone",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/OreStone.png",
+    "Season":"Year Round"
+  },
+  {
+    "name": "stone egg",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/EggRock.png",
+    "Notes": "Only available during Bunny Day",
+    "Season": "Spring/Fall(Southern) Bunny-Day"
+  },
+  {
+    "name": "summer shell",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/ShellSummer.png",
+    "Season": "Summer - Both Hemispheres"
+  },
+  {
+    "name": "water egg",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/EggFish.png",
+    "Notes": "Only available during Bunny Day",
+    "Season": "Spring/Fall(Southern) Bunny-Day"
+  },
+  {
+    "name": "Virgo fragment",
+    "imgURL": "https://acnhcdn.com/latest/MenuIcon/StarpieceVirgo.png",
+    "Notes": "Only available during the Virgo Zodiac, August 23 - September 22",
+    "Season":"Summer/Winter(Southern)"
+  }
+]

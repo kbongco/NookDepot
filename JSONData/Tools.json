@@ -1,0 +1,385 @@
+[
+  {
+    "name": "Bunny Day wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickEgg.png",
+    "diy": true
+    },
+  {
+    "name": "Nook Inc. handheld pennant",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolPennantRcm.png",
+    "diy": false
+  },
+  {
+    "name": "Nook Inc. uchiwa fan",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolFanNook0.png",
+    "diy": false
+  },
+  {
+    "name": "axe",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolAxe.png",
+    "diy": true
+    
+  },
+  {
+    "name": "bamboo wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickBamboo.png",
+    "diy": true
+  },
+  {
+    "name": "blue balloon",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolBalloonNormal.png",
+    "diy": false
+  },
+  {
+    "name": "blue sparkler",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolFireworks1.png",
+    "diy": false
+  },
+  {
+    "name": "bubble blower",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolBubblesNormal.png",
+    "diy": false
+  },
+  {
+    "name": "bug wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStcikInsect.png",
+    "diy": false
+  },
+  {
+    "name": "cherry-blossom wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickCherryblossom.png",
+    "diy": true
+  },
+  
+  {
+    "name": "cosmos wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickCosmos.png",
+    "diy": true
+    },
+    
+  {
+
+    "name": "elephant watering can",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolWateringElephant_Remake_0_0.png"
+      },
+      
+  {
+
+    "name": "fish fishing rod",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolFishingrodColorful_Remake_0_0.png"
+  },
+  {
+
+    "name": "fish wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickFish.png",
+    "diy": false
+  },
+  {
+
+    "name": "fishing rod",
+    "diy": true,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolAngling_Remake_0_0.png"
+  },
+  {
+
+    "name": "flimsy axe",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolAxeStone.png",
+    "diy": true
+  },
+  {
+   
+    "name": "flimsy fishing rod",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolFishingrodWood.png",
+    "diy": true
+  },
+  {
+    "name": "flimsy net",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolNet.png",
+    "diy": true
+  },
+  {
+    "name": "flimsy shovel",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolShovelWood.png",
+    "diy": true
+  },
+  {
+    "name": "flimsy watering can",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolWateringWood.png",
+    "diy": true
+  },
+  {
+    "name": "golden axe",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolAxeGold.png",
+    "diy": true
+  },
+  {
+    "name": "golden net",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolNetGold.png",
+    "diy": true
+  },
+  {
+    "name": "golden rod",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolFishingrodGold.png",
+    "diy": true
+  },
+  {
+    "name": "golden shovel",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolScoopGold.png",
+    "diy": true
+  },
+  {
+    "name": "golden slingshot",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolSlingshotGold.png",
+    "diy": true
+  },
+  {
+    "name": "golden wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickGolden.png",
+    "diy": true
+  },
+  {
+    "name": "golden watering can",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolWateringGold.png",
+    "diy": true
+  },
+  {
+    "name": "green balloon",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolBalloonNormal3.png",
+    "diy": false
+  },
+  {
+    "name": "hyacinth wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickHyacinth.png",
+    "diy": true
+    },
+  {
+
+    "name": "ice wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickSnow.png",
+    "diy": true
+  },
+  {
+    "name": "iron wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickIron.png",
+    "diy": true
+  },
+  {
+    "name": "ladder",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolLadder.png",
+    "diy": true
+  },
+  {
+    "name": "light stick",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolSticklight.png",
+    "diy": false
+  },
+  {
+    "name": "lily wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickYuri.png",
+    "diy": true
+  },
+  {
+    "name": "mums wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickChrysanthemum.png",
+    "diy": true
+  },
+  {
+    "name": "mushroom wand",
+    "diy": true,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickMushroom_Remake_0_0.png"
+        
+  },
+   
+
+  {
+    "name": "net",
+    "diy": true,
+    "imgURL": "https://acnhcdn.com/latest/DIYRecipeIcon/ToolNetNormal.png"
+      
+  },
+  {
+    "name": "ocarina",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolOcarina.png",
+    "diy": true
+
+    },
+  {
+    "name": "outdoorsy fishing rod",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolFishingrodOutdoor_Remake_0_0.png"
+  },
+  {
+    "name": "outdoorsy net",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolNetOutdoor_Remake_0_0.png"
+        
+
+  },
+  {
+    "name": "outdoorsy shovel",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolScoopOutdoor_Remake_0_0.png"
+        
+  },
+  {
+    "name": "outdoorsy slingshot",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolSlingshotOutdoor_Remake_0_0.png"
+  },
+  {
+    "name": "outdoorsy watering can",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolWateringOutdoor_Remake_0_0.png"
+       
+  },
+  {
+    "name": "pan flute",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolPanpipe.png",
+    "diy": true
+  },
+  {
+    "name": "pansy wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickPansy.png",
+    "diy": true
+  },
+  {
+    "name": "party popper",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolCracker.png",
+    "diy": false
+  },
+  {
+    "name": "pink balloon",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolBalloonNormal4.png",
+    "diy": false
+  },
+  {
+    "name": "pinwheel",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolWindmill.png",
+    "diy": false
+  },
+  {
+    "name": "printed-design shovel",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolScoopPattern_Remake_0_0.png"
+  },
+  {
+    "name": "red balloon",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolBalloonNormal1.png",
+    "diy": false
+  },
+  {
+
+    "name": "red sparkler",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolFireworks.png",
+    "diy": false
+  },
+  {
+    "name": "rose wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickRose.png",
+    "diy": true
+  },
+  {
+    "name": "shell wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickShell.png",
+    "diy": true
+  },
+  {
+
+    "name": "shovel",
+    "diy": true,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolScoop_Remake_0_0.png"
+       
+    },
+    
+  {
+    "name": "slingshot",
+    "diy": true,
+    "kitCost": 1,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolSlingshot_Remake_0_0.png"
+        
+  },
+  {
+    "name": "star net",
+    "diy": false,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolNetStar_Remake_0_0.png",
+    "recipe": null
+  },
+  {
+    "name": "star wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolChangeStick.png",
+    "diy": true
+  },
+  {
+    "name": "stone axe",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolAxeStoneNormal.png",
+    "diy": true
+  },
+  {
+    "name": "tambourine",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolTambourine.png",
+    "diy": false
+  },
+  {
+    "name": "timer",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolTimer.png",
+    "diy": false
+  },
+  {
+    "name": "tree-branch wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickTree.png",
+    "diy": true
+  },
+  {
+    "name": "tulip wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickTulip.png",
+    "diy": true
+  },
+  {
+    "name": "tweeter",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolBlowouts.png",
+    "diy": false
+  },
+  {
+    "name": "uchiwa fan",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolPaperFan.png",
+    "diy": false
+  },
+  {
+    "name": "vaulting pole",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/LongWoodenStick.png",
+    "diy": true
+  },
+  {
+    "name": "wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickWood.png",
+    "diy": true
+  },
+  {
+    "name": "watering can",
+    "diy": true,
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolWatering_Remake_0_0.png"
+        
+  },
+  {
+    "name": "wedding wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickJune.png",
+    "diy": true
+  },
+  {
+    "name": "windflower wand",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolStickAnemones.png",
+    "diy": true
+  },
+  {
+    "name": "worn axe",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolAxeFragile.png",
+    "diy": false
+  },
+  {
+    "name": "yellow balloon",
+    "imgURL": "https://acnhcdn.com/latest/FtrIcon/ToolBalloonNormal2.png",
+    "diy": false
+  }
+]
