@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  imgURL: MyString
+  season: MyString
+  listings: one
+
+two:
+  name: MyString
+  imgURL: MyString
+  season: MyString
+  listings: two
