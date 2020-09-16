@@ -42,6 +42,11 @@ export default function Header(props) {
                 DIY Recipes
               </NavLink>
             </li>
+            <li className="page-links">
+              <NavLink exact to='/login'>
+                Login | Signup 
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
