@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch } from 'react-router-dom'
+import Header from './components/Header/Header.jsx'
 import './App.css';
+
 
 function App() {
   return (
-    <>
-      <h1>Hello!</h1>
-    </>
+    // <h1></h1>
+    <Header/>
   )
 }
 

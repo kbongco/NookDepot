@@ -1,0 +1,12 @@
+header, .NookDepot {
+  background-color: #A3A2CF;
+}
+
+.navLinks {
+  list-style-type:none;
+  text-decoration: none;
+  color:black;
+}
+NavLink {
+  color:black;
+}
