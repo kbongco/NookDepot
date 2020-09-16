@@ -16,7 +16,21 @@ export default function Home() {
           <img className='fishing' src="https://i.ibb.co/YjD6b2X/Fishing.jpg" alt="Fishing" border="0" />
         </div>
       </div>
-      <div className=
+      <div className='current-demand'>
+        <div className='current-container'>
+          </div>
+
+
+      </div>
+      <div className='about-nook'>
+      <div className='detailed'>
+        <h2>What is NookDepot?</h2>
+        <p>Inspired by a certain website
+          where you can buy/sell home-made items as well as a certain website 
+          for the animal crossing series. NookDepot focuses more on DIY Materials, DIY Recipes, Tools and plants as well as various gigs like bug-catching, and material gathering. 
+        </p>
+        </div>
+      </div>
     </Layout>
   )
 }

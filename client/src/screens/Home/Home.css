@@ -7,6 +7,11 @@
 .items{
   background-color:#CEEEBA;
 }
+
+.about-nook{
+  background-color:#FFD644;
+  text-align:left;
+}
 .fishing, .plants, .diy-mats, .tools{
   max-width:150px;
   max-height:150px;

@@ -2,6 +2,11 @@ header, .NookDepot {
   background-color: #A3A2CF;
 }
 
+.nookdepot{
+  padding:0;
+  margin:0;
+}
+
 .navLinks {
   list-style-type:none;
   text-decoration: none;
