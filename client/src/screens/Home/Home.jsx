@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../../layouts/Layout.jsx'
+import Subscribe from '../../components/Subscribe/Subscribe.jsx'
 import './Home.css';
 
 export default function Home() {
@@ -32,6 +33,9 @@ export default function Home() {
           for the animal crossing series. NookDepot focuses more on DIY Materials, DIY Recipes, Tools and plants as well as various gigs like bug-catching, and material gathering. 
         </p>
         </div>
+      </div>
+      <div className='subscribe-here'>
+        <Subscribe/>
       </div>
     </Layout>
   )
