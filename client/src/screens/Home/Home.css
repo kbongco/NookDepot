@@ -1,0 +1,14 @@
+.info-container{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+}
+
+.items{
+  background-color:#CEEEBA;
+}
+.fishing, .plants, .diy-mats, .tools{
+  max-width:150px;
+  max-height:150px;
+  border-radius: 50%;
+}
