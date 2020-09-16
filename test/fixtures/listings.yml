@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  link: MyString
+  links: MyString
   user: one
 
 two:
   name: MyString
-  link: MyString
+  links: MyString
   user: two

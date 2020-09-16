@@ -2,12 +2,14 @@
 
 one:
   name: MyString
-  imgURL: MyString
-  notes: MyString
+  hemisphere: MyString
   season: MyString
+  fee: MyString
+  imgURL: MyString
 
 two:
   name: MyString
-  imgURL: MyString
-  notes: MyString
+  hemisphere: MyString
   season: MyString
+  fee: MyString
+  imgURL: MyString

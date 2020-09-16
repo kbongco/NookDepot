@@ -10,9 +10,69 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_09_16_030939) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "create_gigs", force: :cascade do |t|
+    t.string "name"
+    t.string "hemisphere"
+    t.string "season"
+    t.string "fee"
+    t.string "imgURL"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "gigs_users", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "gig_id", null: false
+  end
+
+  create_table "listings", force: :cascade do |t|
+    t.string "name"
+    t.string "links"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_listings_on_user_id"
+  end
+
+  create_table "listings_materials", id: false, force: :cascade do |t|
+    t.bigint "listing_id", null: false
+    t.bigint "material_id", null: false
+  end
+
+  create_table "materials", force: :cascade do |t|
+    t.string "name"
+    t.string "imgURL"
+    t.string "notes"
+    t.string "season"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "towninfos", force: :cascade do |t|
+    t.string "gamename"
+    t.string "townname"
+    t.string "hemisphere"
+    t.string "nativefruit"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_towninfos_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "password"
+    t.string "discord"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "listings", "users"
+  add_foreign_key "towninfos", "users"
 end

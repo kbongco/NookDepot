@@ -12,7 +12,7 @@ class MaterialsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create material" do
     assert_difference('Material.count') do
-      post materials_url, params: { material: { imgURL: @material.imgURL, listings_id: @material.listings_id, name: @material.name, notes: @material.notes, season: @material.season } }, as: :json
+      post materials_url, params: { material: { imgURL: @material.imgURL, name: @material.name, notes: @material.notes, season: @material.season } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class MaterialsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update material" do
-    patch material_url(@material), params: { material: { imgURL: @material.imgURL, listings_id: @material.listings_id, name: @material.name, notes: @material.notes, season: @material.season } }, as: :json
+    patch material_url(@material), params: { material: { imgURL: @material.imgURL, name: @material.name, notes: @material.notes, season: @material.season } }, as: :json
     assert_response 200
   end
 

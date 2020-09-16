@@ -13,11 +13,29 @@ class MaterialsController < ApplicationController
     render json: @material
   end
 
-  def add_material_to_listings
-    @listing = Listing.find(params[:listing_id])
-    @material = Material.find(params[:id])
-    @listing.material.push(@material)
-    render json @listing, include :material 
+  # POST /materials
+  def create
+    @material = Material.new(material_params)
+
+    if @material.save
+      render json: @material, status: :created, location: @material
+    else
+      render json: @material.errors, status: :unprocessable_entity
+    end
+  end
+
+  # PATCH/PUT /materials/1
+  def update
+    if @material.update(material_params)
+      render json: @material
+    else
+      render json: @material.errors, status: :unprocessable_entity
+    end
+  end
+
+  # DELETE /materials/1
+  def destroy
+    @material.destroy
   end
 
   private
@@ -28,6 +46,6 @@ class MaterialsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def material_params
-      params.require(:material).permit(:name, :imgURL, :notes, :season, :listings_id)
+      params.require(:material).permit(:name, :imgURL, :notes, :season)
     end
 end
