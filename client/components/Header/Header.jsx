@@ -28,7 +28,23 @@ export default function Header() {
                 Services
               </NavLink>
             </li>
+            <li className='pageLinks'>
+              <NavLink exact to='/Garden'>
+                Garden
+            </NavLink>
+            </li>
+            <li className='DIYMats'>
+              <NavLink exact to='/materials'>
+                DIY Materials
+              </NavLink>
+            </li>
+            <li className='DIYRecipes'>
+              <NavLink exact to='/DIYRecipes'>
+                DIY Recipes
+              </NavLink>
+            </li>
           </ul>
+          <
           </div>
       </header>
       </>
