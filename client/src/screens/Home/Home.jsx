@@ -17,10 +17,11 @@ export default function Home() {
         </div>
       </div>
       <div className='popular'>
-        <h4>Currently On Demand</h4>
+        <h4 className='demand'>Currently On Demand</h4>
         <div className='on-demand'>
           <img className='sakura' src="https://i.ibb.co/3z7K5x1/cherryblossom.png" alt="cherryblossom" border="0" />
-          <img className='rusted' src="https://i.ibb.co/yNH9bW6/blueroses.png" alt="blueroses" border="0"/>
+          <img className='rusted' src="https://i.ibb.co/yNH9bW6/blueroses.png" alt="blueroses" border="0" />
+          <img className='roses' src="https://i.ibb.co/y4qFd1p/Rusted-Parts.png" />
         </div>
       </div>
       <div className='about-nook'>

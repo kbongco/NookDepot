@@ -23,6 +23,7 @@
 .about-nook{
   background-color:#FFD644;
   text-align:left;
+  padding-bottom:100px;
 }
 .fishing, .plants, .diy-mats, .tools{
   max-width:150px;
@@ -31,7 +32,11 @@
   padding-bottom:25px;
 }
 
-.rusted{
+.rusted, .roses{
   height:136px;
   width: 142px;
+}
+
+.demand{
+  margin-top:0px
 }
