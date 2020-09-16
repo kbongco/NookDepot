@@ -1,19 +1,19 @@
 import React from 'react';
-import { Switch } from 'react-router-dom'
-// import Header from './components/Header/Header.jsx'
-// import Footer from './components/Footer/Footer.jsx'
+import { Route, Switch } from 'react-router-dom'
+
 import Layout from './layouts/Layout.jsx'
+import Home from "./screens/Home/Home.jsx";
 import './App.css';
 
 
 function App() {
   return (
-    // <h1></h1>
-    // <Layout/>
     <>
-    {/* <Header />
-      <Footer /> */}
-      <Layout/>
+      <div>
+        <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
+      </div>
       </>
   )
 }
