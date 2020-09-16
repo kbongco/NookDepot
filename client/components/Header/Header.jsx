@@ -23,6 +23,11 @@ export default function Header() {
                 Tools
               </NavLink>
             </li>
+            <li className='pageLinks'>
+              <NavLink exact to='/Services'>
+                Services
+              </NavLink>
+            </li>
           </ul>
           </div>
       </header>
