@@ -13,30 +13,7 @@ class MaterialsController < ApplicationController
     render json: @material
   end
 
-  # POST /materials
-  def create
-    @material = Material.new(material_params)
 
-    if @material.save
-      render json: @material, status: :created, location: @material
-    else
-      render json: @material.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /materials/1
-  def update
-    if @material.update(material_params)
-      render json: @material
-    else
-      render json: @material.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /materials/1
-  def destroy
-    @material.destroy
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

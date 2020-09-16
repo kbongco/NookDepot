@@ -33,10 +33,7 @@ class CreateGigsController < ApplicationController
     end
   end
 
-  # DELETE /create_gigs/1
-  def destroy
-    @create_gig.destroy
-  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
