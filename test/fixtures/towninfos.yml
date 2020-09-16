@@ -1,17 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  gamename: MyString
+  townname: MyString
   hemisphere: MyString
-  season: MyString
-  fee: MyString
-  imgURL: MyString
+  nativefruit: MyString
   user: one
 
 two:
-  name: MyString
+  gamename: MyString
+  townname: MyString
   hemisphere: MyString
-  season: MyString
-  fee: MyString
-  imgURL: MyString
+  nativefruit: MyString
   user: two

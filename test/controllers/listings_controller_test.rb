@@ -12,7 +12,7 @@ class ListingsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create listing" do
     assert_difference('Listing.count') do
-      post listings_url, params: { listing: { link: @listing.link, name: @listing.name, user_id: @listing.user_id } }, as: :json
+      post listings_url, params: { listing: { links: @listing.links, name: @listing.name, user_id: @listing.user_id } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class ListingsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update listing" do
-    patch listing_url(@listing), params: { listing: { link: @listing.link, name: @listing.name, user_id: @listing.user_id } }, as: :json
+    patch listing_url(@listing), params: { listing: { links: @listing.links, name: @listing.name, user_id: @listing.user_id } }, as: :json
     assert_response 200
   end
 

@@ -10,18 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_15_204829) do
+ActiveRecord::Schema.define(version: 2020_09_16_030939) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "create_gigs", force: :cascade do |t|
+    t.string "name"
+    t.string "hemisphere"
+    t.string "season"
+    t.string "fee"
+    t.string "imgURL"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "gigs_users", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "gig_id", null: false
+  end
+
   create_table "listings", force: :cascade do |t|
     t.string "name"
-    t.string "link"
+    t.string "links"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_listings_on_user_id"
+  end
+
+  create_table "listings_materials", id: false, force: :cascade do |t|
+    t.bigint "listing_id", null: false
+    t.bigint "material_id", null: false
   end
 
   create_table "materials", force: :cascade do |t|
@@ -29,46 +49,30 @@ ActiveRecord::Schema.define(version: 2020_09_15_204829) do
     t.string "imgURL"
     t.string "notes"
     t.string "season"
-    t.bigint "listings_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["listings_id"], name: "index_materials_on_listings_id"
   end
 
-  create_table "services", force: :cascade do |t|
-    t.string "name"
+  create_table "towninfos", force: :cascade do |t|
+    t.string "gamename"
+    t.string "townname"
     t.string "hemisphere"
-    t.string "season"
-    t.string "fee"
-    t.string "imgURL"
+    t.string "nativefruit"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_services_on_user_id"
-  end
-
-  create_table "town_infos", force: :cascade do |t|
-    t.string "InGameName"
-    t.string "TownName"
-    t.string "Hemisphere"
-    t.string "NativeFruit"
-    t.bigint "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_town_infos_on_user_id"
+    t.index ["user_id"], name: "index_towninfos_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
-    t.string "password_digest"
+    t.string "password"
     t.string "discord"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "listings", "users"
-  add_foreign_key "materials", "listings", column: "listings_id"
-  add_foreign_key "services", "users"
-  add_foreign_key "town_infos", "users"
+  add_foreign_key "towninfos", "users"
 end
