@@ -4,8 +4,11 @@ import Home from "../screens/Home/Home.jsx";
 import Directory from '../screens/Directory/Directory.jsx'
 import UnderConstruction from "../screens/UnderConstruction/UnderConstruction.jsx";
 
+import { getAllMaterials } from '../services/materials'
+
 
 export default function MainContainer(props) {
+  
   return (
     <Switch>
       <Route exact path='/' component={Home} />
