@@ -13,26 +13,6 @@ class CreateGigsController < ApplicationController
     render json: @create_gig
   end
 
-  # POST /create_gigs
-  def create
-    @create_gig = CreateGig.new(create_gig_params)
-
-    if @create_gig.save
-      render json: @create_gig, status: :created, location: @create_gig
-    else
-      render json: @create_gig.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /create_gigs/1
-  def update
-    if @create_gig.update(create_gig_params)
-      render json: @create_gig
-    else
-      render json: @create_gig.errors, status: :unprocessable_entity
-    end
-  end
-
 
 
   private
