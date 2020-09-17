@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
-
 import Layout from './layouts/Layout.jsx'
-import Home from "./screens/Home/Home.jsx";
+import MainContainer from './containers/MainContainer.jsx'
 import './App.css';
 
 
@@ -11,7 +10,7 @@ function App() {
     <>
       <div>
         <Switch>
-          <Route exact path='/' component={Home} />
+          <MainContainer />
         </Switch>
       </div>
       </>
