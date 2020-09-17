@@ -13,6 +13,15 @@ import './App.css';
 
 function App() {
   const [currentUser, updateCurrentUser] = useState(null)
+  const history = useHistory();
+
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      updateCurrentUser(currentUser);
+    }
+    handleVerify()
+  }, [])
 
   const loginSubmit = async (loginData) => {
     const userData = await loginUser(loginData)
