@@ -17,6 +17,12 @@ function App() {
   const history = useHistory();
 
   useEffect(() => {
+
+    // const loggedInUser = localStorage.getItem('authToken');
+    // if (loggedInUser) {
+    //   const foundUser = JSON.parse(loggedInUser);
+    //   updateCurrentUser(foundUser)
+    // }
     const handleVerify = async () => {
       const userData = await verifyUser();
       updateCurrentUser(currentUser);
@@ -46,7 +52,7 @@ function App() {
   return (
     <>
         <Layout 
-          currentUser = {currentUser}>
+          currentUser={currentUser}>
         <Switch>
           <Route path='/signup'>
             <SignUp />
