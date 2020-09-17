@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 export default function Header(props) {
-  console.log(props)
   const { currentUser } = props;
+  console.log(props)
   return (
     <header>
       <div className="header-content">
@@ -45,12 +45,12 @@ export default function Header(props) {
               </NavLink>
             </li>
             <li className="page-links">
-              {currentUser ? 
-                <div>logged in</div>:
-                <NavLink exact to='/login'>
-                  Login</NavLink> | <NavLink exact to='/signup'>Sign Up</NavLink>
-              }
-            </li>
+              {
+                currentUser ?
+                  <div> Here
+                  </div> : <NavLink exact to='/login'>
+                    Login</NavLink> | <NavLink exact to='/signup'>Sign Up</NavLink>}
+            </li> 
           </ul>
         </nav>
       </div>
