@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :users do 
     resources :listings
   end
+  resources :listings
   resources :create_gigs
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
