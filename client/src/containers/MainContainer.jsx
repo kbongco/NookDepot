@@ -4,12 +4,15 @@ import Home from "../screens/Home/Home.jsx";
 import Directory from '../screens/Directory/Directory.jsx'
 import Materials from '../screens/Materials/Materials'
 import UnderConstruction from "../screens/UnderConstruction/UnderConstruction.jsx";
+import Warning from '../screens/Warning/Warning'
 
 import { getAllMaterials } from '../services/materials'
 
 
 export default function MainContainer(props) {
   const [materials, updateMaterials] = useState([]);
+  const [gigs, updateGigs] = UseState([]);
+
   console.log(materials)
   console.log(props)
   useEffect(() => {
@@ -17,8 +20,16 @@ export default function MainContainer(props) {
       const materialsArray = await getAllMaterials();
       updateMaterials(materialsArray);
     }
+    const fetchGigs = async () => {
+      const GigsArray = await getAllGigs();
+      updateGigs(GigsArray)
+    }
+    
+    fetchGigs();
     fetchMaterials();
   }, [])
+
+
 
   return (
     <Switch>
@@ -28,6 +39,7 @@ export default function MainContainer(props) {
       <Route path='/garden' component={UnderConstruction} />
       <Route path='/materials' render={(props) => <Materials{...props} materials={materials}/>}/>
       <Route path='/recipes' component={UnderConstruction} />
+      <Route path='/test' component ={Warning} />
     </Switch>
   )
 }

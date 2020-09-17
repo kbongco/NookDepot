@@ -5,7 +5,7 @@ import './Home.css';
 
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <div className='items'>
         <h5 className='whatcanIfind'>Here are some things you can find here ranging from DIY materials, to gigs, to 
         plants to tools!
@@ -37,6 +37,6 @@ export default function Home() {
       <div className='subscribe-here'>
         <Subscribe/>
       </div>
-    </Layout>
+    </div>
   )
 }

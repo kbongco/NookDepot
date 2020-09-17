@@ -20,7 +20,7 @@ export default function Login(props) {
   };
 
   return (
-    <Layout>
+    <>
       <h3 class="login">Login here!</h3>
       <div className="login-container">
         <form
@@ -57,6 +57,6 @@ export default function Login(props) {
           <button id='submit'>Submit</button>
         </form>
       </div>
-    </Layout>
+      </>
   );
 }

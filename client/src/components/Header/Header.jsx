@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 export default function Header(props) {
+  const { currentUser } = props;
+  console.log(props)
   return (
     <header>
       <div className="header-content">
@@ -42,10 +44,18 @@ export default function Header(props) {
                 DIY Recipes
               </NavLink>
             </li>
-            <li className="page-links">
-              <NavLink exact to='/login'>
-                Login</NavLink> | <NavLink exact to ='/signup'>Sign Up</NavLink>
+            <li className='page-links'>
+              <NavLink exact to='/test'>
+                Test Screens
+              </NavLink>
             </li>
+            <li className="page-links">
+              {
+                currentUser ?
+                  <div> Here
+                  </div> : <NavLink exact to='/login'>
+                    Login</NavLink> | <NavLink exact to='/signup'>Sign Up</NavLink>}
+            </li> 
           </ul>
         </nav>
       </div>
