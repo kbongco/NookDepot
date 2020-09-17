@@ -1,0 +1,24 @@
+.login{
+  text-align:center;
+  font-size: 32px;
+}
+
+.login-container{
+  display:block;
+  text-align:center;
+}
+
+.username,  .password{
+  height:25px;
+  width:250px;
+}
+
+#password-field{
+  margin-bottom:50px
+}
+
+#submit {
+  background-color:#484141;
+  color:white;
+  font-size:20px;
+}
