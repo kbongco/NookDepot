@@ -1,0 +1,25 @@
+
+.sign{
+  text-align:center;
+  font-size: 32px;
+}
+
+.signup-container{
+  display:block;
+  text-align:center;
+}
+
+.username, .email, .password, .discord{
+  height:25px;
+  width:250px;
+}
+
+#discord-field{
+  margin-bottom:50px
+}
+
+#signup {
+  background-color:#484141;
+  color:white;
+  font-size:20px;
+}
