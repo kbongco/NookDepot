@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Layout from '../../layouts/Layout.jsx'
 
 export default function SignUp(props) {
   const [formData, updateFormData] = useState({
@@ -19,6 +20,7 @@ export default function SignUp(props) {
   }
 
   return (
+    <Layout>
     <form onSubmit={(e) => {
       e.preventDefault();
       props.registerSubmit(formData)
@@ -30,8 +32,38 @@ export default function SignUp(props) {
           name='username'
           value={username}
           onChange={handleChange}
+        />
+      </label>
+      <br />
+        <label>Email
+         <input 
+            type='text'
+            name='email'
+            value={email}
+            onChange={handleChange}
           />
       </label>
-    </form>
+      <br />
+      <label>Password
+       <input 
+          type='password'
+          name='password'
+          value={password}
+          onChange={handleChange}
+          />
+      </label>
+      <br/>
+      <label>Discord
+       <input 
+          type='text'
+          name='discord'
+          value={discord}
+          onChange={handleChange}
+          />
+      </label>
+      <br />
+      <button>Sign me up!</button>
+      </form>
+      </Layout>
   )
 }
