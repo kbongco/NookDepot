@@ -6,7 +6,7 @@ import MainContainer from './containers/MainContainer.jsx'
 import SignUp from './screens/SignUp/SignUp'
 import Login from './screens/Login/Login'
 
-import { loginUser } from './services/auth'
+import { loginUser, registerUser, verifyUser, removeToken } from './services/auth'
 
 import './App.css';
 
