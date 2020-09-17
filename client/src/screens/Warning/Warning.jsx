@@ -1,4 +1,5 @@
 import React from 'react';
+import './Warning.css'
 
 export default function Warning() {
   return (
@@ -9,7 +10,7 @@ export default function Warning() {
         <button>DELETE</button>
         <button>TAKE ME BACK</button>
       </div>
-      <img src="https://i.ibb.co/Sd9sPn8/delete.jpg" />
+      <img className='warning'src="https://i.ibb.co/Sd9sPn8/delete.jpg" />
     </>
   )
 }
