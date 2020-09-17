@@ -12,7 +12,7 @@ export default function MainContainer(props) {
       <Route path='/directory' component={Directory}/>
       <Route path='/tools' component={UnderConstruction} />
       <Route path='/garden' component={UnderConstruction} />
-      <Route path='/DIY-Recipes' component={UnderConstruction} />
+      <Route path='/recipes' component={UnderConstruction} />
     </Switch>
   )
 }
