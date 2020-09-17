@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Layout from '../../layouts/Layout.jsx'
+import './SignUp.css'
 
 export default function SignUp(props) {
   const [formData, updateFormData] = useState({
@@ -21,13 +22,16 @@ export default function SignUp(props) {
 
   return (
     <Layout>
+      <div class='signup-container'>
     <form onSubmit={(e) => {
       e.preventDefault();
       props.registerSubmit(formData)
     }}>
-      <h3>Sign Up here!</h3>
-      <label>Username:
-       <input
+      <h3 class='sign'>Sign Up here!</h3>
+        <label>Username:
+           <br/>
+            <input
+          className='username'
           type='text'
           name='username'
           value={username}
@@ -36,7 +40,9 @@ export default function SignUp(props) {
       </label>
       <br />
         <label>Email
-         <input 
+         <br/>
+            <input
+            className='email'
             type='text'
             name='email'
             value={email}
@@ -44,8 +50,10 @@ export default function SignUp(props) {
           />
       </label>
       <br />
-      <label>Password
-       <input 
+        <label>Password
+           <br/>
+          <input
+          className='password'
           type='password'
           name='password'
           value={password}
@@ -53,8 +61,11 @@ export default function SignUp(props) {
           />
       </label>
       <br/>
-      <label>Discord
-       <input 
+        <label>Discord
+           <br/>
+            <input
+            className='discord'
+            id='discord-field'
           type='text'
           name='discord'
           value={discord}
@@ -62,8 +73,9 @@ export default function SignUp(props) {
           />
       </label>
       <br />
-      <button>Sign me up!</button>
-      </form>
+      <button id='signup'>Sign me up!</button>
+        </form>
+        </div>
       </Layout>
   )
 }
