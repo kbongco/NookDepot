@@ -44,8 +44,7 @@ export default function Header(props) {
             </li>
             <li className="page-links">
               <NavLink exact to='/login'>
-                Login | Signup 
-              </NavLink>
+                Login</NavLink> | <NavLink exact to ='/signup'>Sign Up</NavLink>
             </li>
           </ul>
         </nav>

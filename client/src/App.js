@@ -5,6 +5,8 @@ import { Route, Switch } from 'react-router-dom'
 import MainContainer from './containers/MainContainer.jsx'
 
 import SignUp from './screens/SignUp/SignUp'
+import Login from './screens/Login/Login'
+
 import './App.css';
 
 
@@ -15,6 +17,9 @@ function App() {
         <Switch>
           <Route path='/signup'>
             <SignUp />
+          </Route>
+          <Route path='/login'>
+            <Login />
           </Route>
           <MainContainer />
         </Switch>
