@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer.jsx'
 export default function Layout(props) {
   return (
   <>
-      <Header />
+      <Header currentUser={props.currentUser}/>
       <div className='layout-children'>{props.children}</div>
       <Footer />
   </>
