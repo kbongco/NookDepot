@@ -4,7 +4,6 @@ import './UnderConstruction.css'
 
 export default function UnderConstruction() {
   return (
-    <Layout>
     <div className='underconstruction'>
     <h1>404! Not Found!</h1>
       <h2>This section of the site is 
@@ -13,6 +12,5 @@ export default function UnderConstruction() {
     </h2>
     <img className='construction' src="https://i.ibb.co/0q37sZf/construction.jpg"/>
       </div>
-      </Layout>
   )
 }

@@ -8,7 +8,7 @@ export default function Materials(props) {
   console.log(props)
 
   return (
-    <Layout>
+    <>
       <div className='materialparent-container'>
       <h1 className='DIYmats'>DIY Materials</h1><br/>
       {materials.map((material) => (
@@ -19,6 +19,6 @@ export default function Materials(props) {
       </div>
       ))} 
       </div>
-    </Layout>
+    </>
   )
 }
