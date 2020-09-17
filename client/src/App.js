@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Switch} from 'react-router-dom'
+import { Route, Switch, useHistory} from 'react-router-dom'
 
 import MainContainer from './containers/MainContainer.jsx'
 
@@ -23,9 +23,23 @@ function App() {
     handleVerify()
   }, [])
 
+
   const loginSubmit = async (loginData) => {
     const userData = await loginUser(loginData)
     updateCurrentUser(userData)
+  }
+
+  const registerSubmit = async (registerData) => {
+    const userData = await registerUser(registerData);
+    updateCurrentUser(userData);
+    history.push('/');
+  }
+
+  const handleLogout = () => {
+    localStorage.removeItem('authToken');
+    removeToken();
+    updateCurrentUser(null);
+    history.push('/');
   }
   return (
     <>
