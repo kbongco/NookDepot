@@ -11,6 +11,8 @@ import { getAllMaterials } from '../services/materials'
 
 export default function MainContainer(props) {
   const [materials, updateMaterials] = useState([]);
+  const [gigs, updateGigs] = UseState([]);
+
   console.log(materials)
   console.log(props)
   useEffect(() => {
@@ -18,8 +20,16 @@ export default function MainContainer(props) {
       const materialsArray = await getAllMaterials();
       updateMaterials(materialsArray);
     }
+    const fetchGigs = async () => {
+      const GigsArray = await getAllGigs();
+      updateGigs(GigsArray)
+    }
+    
+    fetchGigs();
     fetchMaterials();
   }, [])
+
+
 
   return (
     <Switch>
