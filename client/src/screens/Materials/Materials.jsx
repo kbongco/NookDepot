@@ -15,6 +15,7 @@ export default function Materials(props) {
          <div container='material-container'>
          <p className='material-name'>{material.name}</p>
           <img className='material-icon' src={material.imgURL} />
+          <p>Details</p>
       </div>
       ))} 
       </div>
