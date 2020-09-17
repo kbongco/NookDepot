@@ -44,6 +44,11 @@ export default function Header(props) {
                 DIY Recipes
               </NavLink>
             </li>
+            <li className='page-links'>
+              <NavLink exact to='/test'>
+                Test Screens
+              </NavLink>
+            </li>
             <li className="page-links">
               {
                 currentUser ?
