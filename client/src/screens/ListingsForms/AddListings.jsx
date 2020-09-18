@@ -10,7 +10,7 @@ export default function AddListings(props) {
   const { name } = formData
   const { links } = formData
   const { createSubmit } = props;
-
+console.log(props)
   const handleChange = (e) => {
     const { value } = e.target;
     const { value2 } = e.target;

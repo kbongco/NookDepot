@@ -1,10 +1,12 @@
 import React from 'react'
+import { useParams, Link } from 'react-router-dom'
 
 
 import './Materials.css'
 
 export default function Materials(props) {
-  const {materials} = props
+  const { materials } = props
+  const { id } = useParams();
   console.log(props)
 
   return (
@@ -15,7 +17,7 @@ export default function Materials(props) {
          <div container='material-container'>
          <p className='material-name'>{material.name}</p>
           <img className='material-icon' src={material.imgURL} />
-          <p>Details</p>
+          <Link to={`/materials/${id}`}><p>Details</p></Link>
       </div>
       ))} 
       </div>

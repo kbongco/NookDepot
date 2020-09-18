@@ -12,7 +12,7 @@ import Gigs from '../screens/Gigs/Gigs'
 
 import { getAllMaterials } from '../services/materials'
 import { getAllGigs } from '../services/gigs'
-import { getAllListings, putListings } from '../services/listings'
+import { getAllListings, postListings, putListings } from '../services/listings'
 
 
 export default function MainContainer(props) {
@@ -44,6 +44,10 @@ export default function MainContainer(props) {
     fetchListings();
   }, [])
 
+  const createSubmit = async (formData) => {
+    const newListing = await postListings(formData)
+    updateListings(prevState => [...prevState, newListing]);
+  }
   const updateSubmit = async (id, formData) => {
     const updatedListings = await putListings(id, formData);
     listings(prevState => prevState.map(listings => listings.id  === Number(id) ? updatedListings : listings))
@@ -58,13 +62,14 @@ export default function MainContainer(props) {
       <Route exact path='/listings/:id/edit'>
         <EditListings listings={listings} updateSubmit={updateSubmit}/>
       </Route>
-      <Route path='/listings/new' component={AddListings}/>
+      <Route path='/listings/new' component={AddListings} createSubmit={createSubmit}/>
       <Route path='/tools' component={UnderConstruction} />
       <Route path='/gigs' render={(props) => <Gigs{...props} gigs={gigs} />}/>
       <Route path='/garden' component={UnderConstruction} />
       <Route path='/materials' render={(props) => <Materials{...props} materials={materials} />} />
+      <Route exact path='/materials/:id' materials={materials} component={MaterialsDetail}></Route>
       <Route path='/recipes' component={UnderConstruction} />
-      <Route path='/test' component={Warning} />
+      <Route path='/test' render={(props) => <MaterialsDetail{...props} materials={materials}/>} />
       <Route path='/warning' component={Warning} />
     </Switch>
   )

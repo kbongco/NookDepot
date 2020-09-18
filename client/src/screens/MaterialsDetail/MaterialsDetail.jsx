@@ -3,29 +3,31 @@ import { useParams } from 'react-router-dom'
 import { getOneMaterial } from '../../services/materials.js'
 
 export default function MaterialsDetail(props) { 
-  const [material, updateMaterial] = useState(null)
-  const [materialId, updateMaterialId] = useState('')
+  const [material, updateMaterial] = useState(null);
+  const [materialId, updateMaterialId] = useState('');
   const { id } = useParams();
-
-  const { materials } = props 
-
+  const { materials } = props
+  console.log(props)
 
   useEffect(() => {
     const fetchMaterial = async () => {
-      const singleMaterial = await getOneMaterial(id);
-      updateMaterial(singleMaterial)
+      const oneMaterial = await getOneMaterial(id)
+      updateMaterial(oneMaterial)
     }
-    fetchMaterial()
+    fetchMaterial();
   }, [])
 
-  const handleChange = (e) => {
-    const { value } = e.target;
-    updateMaterialId(value)
-  }
+  
+
 
   return (
     <div>
-      <h1>Hai</h1>
+      <img className='materials-img'
+        src={materials.imgURL} />
+      <h1>{materials.name}</h1>
+      <p>{materials.notes}</p>
+      <p>{materials.season}</p>
+
     </div>
   )
   
