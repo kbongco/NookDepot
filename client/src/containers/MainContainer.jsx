@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom'
 import Home from "../screens/Home/Home.jsx";
-import Directory from '../screens/Directory/Directory.jsx'
+import Listings from '../screens/Listings/Listings.jsx'
+import AddListings from '../screens/ListingsForms/AddListings.jsx'
 import Materials from '../screens/Materials/Materials'
 import UnderConstruction from "../screens/UnderConstruction/UnderConstruction.jsx";
 import Warning from '../screens/Warning/Warning'
@@ -37,7 +38,8 @@ export default function MainContainer(props) {
   return (
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route path='/directory' component={Directory}/>
+      <Route exact path='/listings' component={Listings} />
+      <Route path='/listings/new' component={AddListings}/>
       <Route path='/tools' component={UnderConstruction} />
       <Route path='/gigs' render={(props) => <Gigs{...props} gigs={gigs} />}/>
       <Route path='/garden' component={UnderConstruction} />
