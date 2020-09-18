@@ -16,7 +16,10 @@ export default function EditListings(props) {
   useEffect(() => {
     const preFilForm = () => {
       const singleListing = listings.find(listing => listing.id === Number(id))
-      setFormData({name: singleListing.name, link: singleListing.links})
+      setFormData({
+        name: singleListing.name,
+        link: singleListing.links
+      })
     }
     if (listings.length) {
       preFilForm();
@@ -24,7 +27,7 @@ export default function EditListings(props) {
   }, [listings])
   
   const handleChange = (e) => {
-    const { value } = e.target;
+    const { name, value } = e.target;
     setFormData({ name: value})
   }
   return (
@@ -36,6 +39,7 @@ export default function EditListings(props) {
       <label>
         Name:
          <input
+          name='name'
           type='text'
           value={name}
           onChange={handleChange}
