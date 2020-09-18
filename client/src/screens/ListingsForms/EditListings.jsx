@@ -18,7 +18,7 @@ export default function EditListings(props) {
       const singleListing = listings.find(listing => listing.id === Number(id))
       setFormData({
         name: singleListing.name,
-        link: singleListing.links
+        links: singleListing.links
       })
     }
     if (listings.length) {
@@ -36,14 +36,24 @@ export default function EditListings(props) {
       updateSubmit(id,formData)
     }}>
       <h3>Edit your listing </h3>
-      <label>
-        Name:
+      <label><br/>
+        Name:<br/>
          <input
           name='name'
           type='text'
           value={name}
           onChange={handleChange}
-          />
+        />
+        <label><br/>
+          Link:<br/> 
+           <input 
+            name='links'
+            type='text'
+            value={links}
+            onChange={handleChange}
+          /><br/>
+          <button>Edit your listing! </button>
+        </label>
       </label>
     </form>
   )
