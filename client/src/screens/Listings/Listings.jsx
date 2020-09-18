@@ -27,8 +27,9 @@ export default function Listings(props) {
                 <td>
                   <p>{listing.links}</p>
                 </td>
-                <td>
+                <td><Link to={`/listings/${listing.id}/edit`}>
                   Edit
+                   </Link>
                 </td>
                 <td>
                   <Link to={`/warning`}>Delete</Link>
