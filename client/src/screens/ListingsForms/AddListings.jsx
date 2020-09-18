@@ -54,7 +54,7 @@ export default function AddListings(props) {
             />
           </label>
           <br />
-          <button>Create </button>
+          <button>Add your town information</button>
         </form>
       </div>
     </>

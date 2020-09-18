@@ -10,26 +10,26 @@ class TowninfosController < ApplicationController
 
   # GET /towninfos/1
   def show
-    render json: @towninfo
+    render json: @towninfos
   end
 
   # POST /towninfos
   def create
-    @towninfo = Towninfo.new(towninfo_params)
+    @towninfos = Towninfo.new(towninfo_params)
 
-    if @towninfo.save
-      render json: @towninfo, status: :created
+    if @towninfos.save
+      render json: @towninfos, status: :created
     else
-      render json: @towninfo.errors, status: :unprocessable_entity
+      render json: @towninfos.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /towninfos/1
   def update
-    if @towninfo.update(towninfo_params)
-      render json: @towninfo
+    if @towninfos.update(towninfo_params)
+      render json: @towninfos
     else
-      render json: @towninfo.errors, status: :unprocessable_entity
+      render json: @towninfos.errors, status: :unprocessable_entity
     end
   end
 
