@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import { getOneListings } from '../../services/listings'
 
 export default function EditListings(props) {
@@ -8,10 +8,10 @@ export default function EditListings(props) {
     links:""
   })
 
-  const { name } = formData;
-  const { links } = formData;
+  const {name, links } = formData
   const { id } = useParams();
   const { listings, updateSubmit } = props;
+  const history = useHistory();
 
   useEffect(() => {
     const preFilForm = () => {
