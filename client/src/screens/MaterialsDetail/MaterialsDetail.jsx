@@ -17,7 +17,7 @@ export default function MaterialsDetail(props) {
     fetchMaterial();
   }, [])
 
-  
+  // const material = props.material.filter (material => material.material_id)
 
 
   return (

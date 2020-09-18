@@ -21,7 +21,6 @@ export default function SignUp(props) {
   }
 
   return (
-    <Layout>
       <div class='signup-container'>
     <form onSubmit={(e) => {
       e.preventDefault();
@@ -76,6 +75,6 @@ export default function SignUp(props) {
       <button id='signup'>Sign me up!</button>
         </form>
         </div>
-      </Layout>
+
   )
 }
