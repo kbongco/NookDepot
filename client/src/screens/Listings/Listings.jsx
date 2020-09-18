@@ -7,6 +7,7 @@ export default function Listings(props) {
     <>
       <h1 className='current-listings'>Check out the current Listings here!</h1>
       <h4>Want to add your listing? Go <Link to={`/listings/new`}>Here</Link></h4>
+      
     </>
   )
 }

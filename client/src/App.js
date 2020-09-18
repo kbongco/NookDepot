@@ -52,7 +52,8 @@ function App() {
   return (
     <div className='main'>
         <Layout 
-          currentUser={currentUser}>
+        currentUser={currentUser}
+        handleLogout={handleLogout}>
         <Switch>
           <Route path='/signup'>
             <SignUp />

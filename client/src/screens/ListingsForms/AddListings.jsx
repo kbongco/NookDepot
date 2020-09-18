@@ -3,8 +3,8 @@ import './AddListings.css'
 
 export default function AddListings(props) {
   const [formData, setFormData] = useState({
-    name: "",
-    links:""
+    name: '',
+    links:''
   })
 
   const { name } = formData

@@ -10,13 +10,16 @@ import Gigs from '../screens/Gigs/Gigs'
 
 import { getAllMaterials } from '../services/materials'
 import { getAllGigs } from '../services/gigs'
+import { getAllListings } from '../services/listings'
 
 
 export default function MainContainer(props) {
   const [materials, updateMaterials] = useState([]);
   const [gigs, updateGigs] = useState([]);
+  const [listings, updateListings] = useState([])
 
   console.log(gigs)
+  console.log(listings)
 
   console.log(materials)
   useEffect(() => {
@@ -28,9 +31,15 @@ export default function MainContainer(props) {
       const GigsArray = await getAllGigs();
       updateGigs(GigsArray)
     }
+
+    const fetchListings = async () => {
+      const ListingsArray = await getAllListings();
+      updateListings(ListingsArray)
+    }
     
     fetchGigs();
     fetchMaterials();
+    fetchListings();
   }, [])
 
 
@@ -38,7 +47,7 @@ export default function MainContainer(props) {
   return (
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route exact path='/listings' component={Listings} />
+      <Route exact path='/listings' render ={(props) => <Listings{...props} listings={listings}/>} />
       <Route path='/listings/new' component={AddListings}/>
       <Route path='/tools' component={UnderConstruction} />
       <Route path='/gigs' render={(props) => <Gigs{...props} gigs={gigs} />}/>

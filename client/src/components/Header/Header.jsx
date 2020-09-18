@@ -53,7 +53,8 @@ export default function Header(props) {
               {
                 currentUser ?
                   <div> <NavLink exact to='/login'>
-                  Your Profile</NavLink> | <NavLink exact to='/signup'>Add Listing</NavLink>
+                    Your Profile</NavLink> | <NavLink exact to={`/listings/new`}>Add Listing</NavLink> | 
+                    {/* <button onClick={props.handleLogout}>Logout</button> */}
                   </div> : <NavLink exact to='/login'>
                     Login</NavLink> | <NavLink exact to='/signup'>Sign Up</NavLink>}
             </li> 
