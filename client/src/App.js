@@ -25,7 +25,7 @@ function App() {
     // }
     const handleVerify = async () => {
       const userData = await verifyUser();
-      updateCurrentUser(currentUser);
+      updateCurrentUser(userData);
     }
     handleVerify()
   }, [])
@@ -50,7 +50,7 @@ function App() {
     history.push('/');
   }
   return (
-    <>
+    <div className='main'>
         <Layout 
           currentUser={currentUser}>
         <Switch>
@@ -62,8 +62,9 @@ function App() {
           </Route>
           <MainContainer />
           </Switch>
-          </Layout>
-      </>
+      </Layout>
+      
+      </div>
   )
 }
 

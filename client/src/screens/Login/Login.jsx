@@ -40,6 +40,7 @@ export default function Login(props) {
               onChange={handleChange}
             />
           </label>
+          <br/>
           <br />
           <label>
             Password:

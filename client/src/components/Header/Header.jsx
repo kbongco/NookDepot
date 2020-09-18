@@ -17,8 +17,8 @@ export default function Header(props) {
               </NavLink>
             </li>
             <li className='page-links'>
-              <NavLink exact to="/directory">
-                Directory
+              <NavLink exact to="/listings">
+                Listings
               </NavLink>
             </li>
             <li className="page-links">
@@ -53,7 +53,7 @@ export default function Header(props) {
               {
                 currentUser ?
                   <div> <NavLink exact to='/login'>
-                  Your Listings</NavLink> | <NavLink exact to='/signup'>Add Listing</NavLink>
+                  Your Profile</NavLink> | <NavLink exact to='/signup'>Add Listing</NavLink>
                   </div> : <NavLink exact to='/login'>
                     Login</NavLink> | <NavLink exact to='/signup'>Sign Up</NavLink>}
             </li> 
