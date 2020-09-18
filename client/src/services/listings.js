@@ -20,7 +20,7 @@ export const postListings = async (formData) => {
   return resp.data 
 }
 
-export const deleteFood = async (id) => {
+export const deleteListings= async (id) => {
   const resp = await api.delete(`/foods/${id}`)
   return resp.data 
 }

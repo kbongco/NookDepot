@@ -25,15 +25,19 @@ export default function EditListings(props) {
       preFilForm();
     }
   }, [listings])
-  
+
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ name: value})
+    const { name, value } = e.target 
+    const editData = { [name]: value }
+    setFormData((formData) => {
+      return {...formData, ...editData}
+    })
   }
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
-      updateSubmit(id,formData)
+      updateSubmit(id, formData)
+      history.push('/listings')
     }}>
       <h3>Edit your listing </h3>
       <label><br/>

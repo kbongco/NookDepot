@@ -12,7 +12,7 @@ import Gigs from '../screens/Gigs/Gigs'
 
 import { getAllMaterials } from '../services/materials'
 import { getAllGigs } from '../services/gigs'
-import { getAllListings, postListings, putListings } from '../services/listings'
+import { getAllListings, postListings, putListings, deleteListings } from '../services/listings'
 
 
 export default function MainContainer(props) {
@@ -50,7 +50,12 @@ export default function MainContainer(props) {
   }
   const updateSubmit = async (id, formData) => {
     const updatedListings = await putListings(id, formData);
-    listings(prevState => prevState.map(listings => listings.id  === Number(id) ? updatedListings : listings))
+    updateListings(prevState => prevState.map(listings => listings.id  === Number(id) ? updatedListings : listings))
+  }
+
+  const handleDelete = async (id) => {
+    await deleteListings(id)
+    updateListings(prevState => prevState.filter(listings => listings.id !== id))
   }
 
 
@@ -59,10 +64,13 @@ export default function MainContainer(props) {
     <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/listings' render={(props) => <Listings{...props} listings={listings} />} />
+
       <Route exact path='/listings/:id/edit'>
-        <EditListings listings={listings} updateSubmit={updateSubmit}/>
+        <EditListings updateSubmit={updateSubmit} listings={listings}/>
       </Route>
-      <Route path='/listings/new'><AddListings createSubmit={createSubmit}/></Route>
+
+      <Route path='/listings/new'><AddListings createSubmit={createSubmit} /></Route>
+      
       <Route path='/tools' component={UnderConstruction} />
       <Route path='/gigs' render={(props) => <Gigs{...props} gigs={gigs} />}/>
       <Route path='/garden' component={UnderConstruction} />
@@ -70,7 +78,7 @@ export default function MainContainer(props) {
       <Route exact path='/materials/:id' materials={materials} component={MaterialsDetail}></Route>
       <Route path='/recipes' component={UnderConstruction} />
       <Route path='/test' render={(props) => <MaterialsDetail{...props} materials={materials}/>} />
-      <Route path='/warning' component={Warning} />
+      <Route path='/warning' component={Warning} handleDelete={handleDelete} />
     </Switch>
   )
 }
