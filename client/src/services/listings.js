@@ -16,7 +16,7 @@ export const putListings = async (id, formData) => {
 }
 
 export const postListings = async (formData) => {
-  const resp = await api.post('/listings', { name: formData, links: formData })
+  const resp = await api.post('/listings', { listing:formData })
   return resp.data 
 }
 

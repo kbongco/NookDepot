@@ -62,7 +62,7 @@ export default function MainContainer(props) {
       <Route exact path='/listings/:id/edit'>
         <EditListings listings={listings} updateSubmit={updateSubmit}/>
       </Route>
-      <Route path='/listings/new' component={AddListings} createSubmit={createSubmit}/>
+      <Route path='/listings/new'><AddListings createSubmit={createSubmit}/></Route>
       <Route path='/tools' component={UnderConstruction} />
       <Route path='/gigs' render={(props) => <Gigs{...props} gigs={gigs} />}/>
       <Route path='/garden' component={UnderConstruction} />

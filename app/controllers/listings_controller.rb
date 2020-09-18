@@ -1,5 +1,6 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /listings
   def index
@@ -16,9 +17,9 @@ class ListingsController < ApplicationController
   # POST /listings
   def create
     @listing = Listing.new(listing_params)
-
+@listing.user = @current_user 
     if @listing.save
-      render json: @listing, status: :created, location: @listing
+      render json: @listing, status: :created
     else
       render json: @listing.errors, status: :unprocessable_entity
     end

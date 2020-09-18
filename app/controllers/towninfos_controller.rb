@@ -18,7 +18,7 @@ class TowninfosController < ApplicationController
     @towninfo = Towninfo.new(towninfo_params)
 
     if @towninfo.save
-      render json: @towninfo, status: :created, location: @towninfo
+      render json: @towninfo, status: :created
     else
       render json: @towninfo.errors, status: :unprocessable_entity
     end
