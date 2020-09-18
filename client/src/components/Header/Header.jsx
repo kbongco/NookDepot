@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default function Header(props) {
@@ -11,51 +11,52 @@ export default function Header(props) {
         <h1 className='nookdepot'>NookDepot</h1>
         <nav className='nav'>
           <ul className='navLinks'>
-            <li className='page-links'>
-              <NavLink exact to="/">
+            <li className='page-Links'>
+              <Link exact to="/">
                 Home
-              </NavLink>
+              </Link>
             </li>
-            <li className='page-links'>
-              <NavLink exact to="/listings">
+            <li className='page-Links'>
+              <Link exact to="/listings">
                 Listings
-              </NavLink>
+              </Link>
             </li>
-            <li className="page-links">
-              <NavLink exact to='/tools'>
+            <li className="page-Links">
+              <Link exact to='/tools'>
                 Tools
-              </NavLink>
+              </Link>
             </li>
-            <li className="page-links">
-              <NavLink exact to="/gigs">
+            <li className="page-Links">
+              <Link exact to="/gigs">
                 Gigs
-              </NavLink>
-              <NavLink exact to='/Garden'>
+              </Link>
+              <Link exact to='/Garden'>
                 Garden
-              </NavLink>
+              </Link>
             </li>
-            <li className="page-links">
-              <NavLink exact to="/materials">
+            <li className="page-Links">
+              <Link exact to="/materials">
                 DIY Materials
-              </NavLink>
+              </Link>
             </li>
-            <li className="page-links">
-              <NavLink exact to='/recipes'>
+            <li className="page-Links">
+              <Link exact to='/recipes'>
                 DIY Recipes
-              </NavLink>
+              </Link>
             </li>
-            <li className='page-links'>
-              <NavLink exact to='/test'>
+            <li className='page-Links'>
+              <Link exact to='/test'>
                 Test Screens
-              </NavLink>
+              </Link>
             </li>
-            <li className="page-links">
+            <li className="page-Links">
               {
                 currentUser ?
-                  <div> <NavLink exact to='/login'>
-                  Your Profile</NavLink> | <NavLink exact to='/signup'>Add Listing</NavLink>
-                  </div> : <NavLink exact to='/login'>
-                    Login</NavLink> | <NavLink exact to='/signup'>Sign Up</NavLink>}
+                  <div> <Link exact to='/login'>
+                    Your Profile</Link> | <Link exact to={`/listings/new`}>Add Listing</Link> | 
+                    <button onClick={props.handleLogout}>Logout</button>
+                  </div> : <div><Link exact to='/login'>
+                    Login</Link>  <Link exact to='/signup'>Sign Up</Link></div>}
             </li> 
           </ul>
         </nav>

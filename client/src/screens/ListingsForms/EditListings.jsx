@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { getOneListings } from '../services/listings'
+import { useParams, useHistory } from 'react-router-dom';
+import { getOneListings } from '../../services/listings'
 
 export default function EditListings(props) {
   const [formData, setFormData] = useState({
@@ -8,10 +8,10 @@ export default function EditListings(props) {
     links:""
   })
 
-  const { name } = formData;
-  const { links } = formData;
+  const {name, links } = formData
   const { id } = useParams();
   const { listings, updateSubmit } = props;
+  const history = useHistory();
 
   useEffect(() => {
     const preFilForm = () => {
@@ -23,5 +23,24 @@ export default function EditListings(props) {
     }
   }, [listings])
   
-  const handleChange = (e)
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setFormData({ name: value})
+  }
+  return (
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      updateSubmit(id,formData)
+    }}>
+      <h3>Edit your listing </h3>
+      <label>
+        Name:
+         <input
+          type='text'
+          value={name}
+          onChange={handleChange}
+          />
+      </label>
+    </form>
+  )
 }
