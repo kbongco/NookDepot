@@ -1,0 +1,13 @@
+.DIYmats{
+  text-align:center;
+}
+
+.materialparent-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+
+.material-name{
+  text-align:center;
+}

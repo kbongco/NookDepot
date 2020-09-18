@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+*{
+  font-family: 'Baloo 2', cursive;
+}
 .App {
   text-align: center;
 }
@@ -26,6 +30,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.main {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
 }
 
 @keyframes App-logo-spin {

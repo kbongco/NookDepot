@@ -1,0 +1,48 @@
+.info-container, .on-demand{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+}
+
+.whatcanIfind{
+  margin-top:-18px;
+}
+
+.about-it{
+  margin-top:0px;
+}
+
+.items{
+  background-color:#CEEEBA;
+}
+
+.popular{
+  background-color:#F6F5F5
+}
+
+.about-nook{
+  background-color:#FFD644;
+  text-align:left;
+  padding-bottom:100px;
+}
+.fishing, .plants, .diy-mats, .tools{
+  max-width:150px;
+  max-height:150px;
+  border-radius: 50%;
+  padding-bottom:25px;
+}
+
+.rusted, .roses{
+  height:136px;
+  width: 142px;
+}
+
+.demand{
+  margin-top:0px
+}
+
+.subscribe-here{
+  background-color:#ABE6F3;
+  padding-top:15px;
+  padding-bottom:200px;
+}

@@ -1,0 +1,23 @@
+.gigs{
+  text-align:center;
+}
+
+.gigsparent-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  
+}
+
+.material-name{
+  text-align:center;
+}
+
+.gig-icon{
+  height:250px;
+  width:150px;
+}
+
+.gig-container{
+  border: 5px solid black;
+}
