@@ -31,7 +31,7 @@ export default function Listings(props) {
                   Edit
                 </td>
                 <td>
-                  Delete
+                  <Link to={`/warning`}>Delete</Link>
                 </td>
               </tr>
             ))}

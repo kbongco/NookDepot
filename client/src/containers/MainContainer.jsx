@@ -4,6 +4,7 @@ import Home from "../screens/Home/Home.jsx";
 import Listings from '../screens/Listings/Listings.jsx'
 import AddListings from '../screens/ListingsForms/AddListings.jsx'
 import Materials from '../screens/Materials/Materials'
+import MaterialsDetail from '../screens/MaterialsDetail/MaterialsDetail'
 import UnderConstruction from "../screens/UnderConstruction/UnderConstruction.jsx";
 import Warning from '../screens/Warning/Warning'
 import Gigs from '../screens/Gigs/Gigs'
@@ -52,9 +53,10 @@ export default function MainContainer(props) {
       <Route path='/tools' component={UnderConstruction} />
       <Route path='/gigs' render={(props) => <Gigs{...props} gigs={gigs} />}/>
       <Route path='/garden' component={UnderConstruction} />
-      <Route path='/materials' render={(props) => <Materials{...props} materials={materials}/>}/>
+      <Route path='/materials' render={(props) => <Materials{...props} materials={materials} />} />
       <Route path='/recipes' component={UnderConstruction} />
-      <Route path='/test' component ={Warning} />
+      <Route path='/test' component={Warning} />
+      <Route path='/warning' component={Warning} />
     </Switch>
   )
 }

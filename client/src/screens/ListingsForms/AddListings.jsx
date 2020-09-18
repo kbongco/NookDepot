@@ -13,7 +13,8 @@ export default function AddListings(props) {
 
   const handleChange = (e) => {
     const { value } = e.target;
-    setFormData({ name: value });
+    const { value2 } = e.target;
+    setFormData({ name: value, links:value2  });
   }
 
   return (

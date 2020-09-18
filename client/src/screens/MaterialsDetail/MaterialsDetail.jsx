@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'
-import { getOneMaterial } from '../services/materials.js'
+import { getOneMaterial } from '../../services/materials.js'
 
 export default function MaterialsDetail(props) { 
   const [material, updateMaterial] = useState(null)
   const [materialId, updateMaterialId] = useState('')
   const { id } = useParams();
+
+  const { materials } = props 
 
 
   useEffect(() => {
@@ -18,6 +20,13 @@ export default function MaterialsDetail(props) {
 
   const handleChange = (e) => {
     const { value } = e.target;
-    setMaterialId(value)
+    updateMaterialId(value)
   }
+
+  return (
+    <div>
+      <h1>Hai</h1>
+    </div>
+  )
+  
 }
