@@ -23,5 +23,24 @@ export default function EditListings(props) {
     }
   }, [listings])
   
-  const handleChange = (e)
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setFormData({ name: value})
+  }
+  return (
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      updateSubmit(id,formData)
+    }}>
+      <h3>Edit your listing </h3>
+      <label>
+        Name:
+         <input
+          type='text'
+          value={name}
+          onChange={handleChange}
+          />
+      </label>
+    </form>
+  )
 }
