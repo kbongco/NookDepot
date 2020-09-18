@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getOneListings } from '../services/listings'
+import { getOneListings } from '../../services/listings'
 
 export default function EditListings(props) {
   const [formData, setFormData] = useState({

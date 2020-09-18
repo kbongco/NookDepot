@@ -3,6 +3,7 @@ import { Switch, Route, useHistory } from 'react-router-dom'
 import Home from "../screens/Home/Home.jsx";
 import Listings from '../screens/Listings/Listings.jsx'
 import AddListings from '../screens/ListingsForms/AddListings.jsx'
+import EditListings from '../screens/ListingsForms/EditListings';
 import Materials from '../screens/Materials/Materials'
 import MaterialsDetail from '../screens/MaterialsDetail/MaterialsDetail'
 import UnderConstruction from "../screens/UnderConstruction/UnderConstruction.jsx";
@@ -11,7 +12,7 @@ import Gigs from '../screens/Gigs/Gigs'
 
 import { getAllMaterials } from '../services/materials'
 import { getAllGigs } from '../services/gigs'
-import { getAllListings } from '../services/listings'
+import { getAllListings, putListings } from '../services/listings'
 
 
 export default function MainContainer(props) {
@@ -43,12 +44,20 @@ export default function MainContainer(props) {
     fetchListings();
   }, [])
 
+  const updateSubmit = async (id, formData) => {
+    const updatedListings = await putListings(id, formData);
+    listings(prevState => prevState.map(listings => listings.id  === Number(id) ? updatedListings : listings))
+  }
+
 
 
   return (
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route exact path='/listings' render ={(props) => <Listings{...props} listings={listings}/>} />
+      <Route exact path='/listings' render={(props) => <Listings{...props} listings={listings} />} />
+      <Route exact path='/listings/:id/edit'>
+        <EditListings listings={listings} updateSubmit={updateSubmit}/>
+      </Route>
       <Route path='/listings/new' component={AddListings}/>
       <Route path='/tools' component={UnderConstruction} />
       <Route path='/gigs' render={(props) => <Gigs{...props} gigs={gigs} />}/>
