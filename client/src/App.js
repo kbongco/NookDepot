@@ -56,7 +56,7 @@ function App() {
         handleLogout={handleLogout}>
         <Switch>
           <Route path='/signup'>
-            <SignUp />
+            <SignUp registerSubmit={registerSubmit}/>
           </Route>
           <Route path='/login'>
             <Login loginSubmit={loginSubmit}/>

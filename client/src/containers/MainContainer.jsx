@@ -78,7 +78,7 @@ export default function MainContainer(props) {
       <Route exact path='/materials/:id' materials={materials} component={MaterialsDetail}></Route>
       <Route path='/recipes' component={UnderConstruction} />
       <Route path='/test' render={(props) => <MaterialsDetail{...props} materials={materials}/>} />
-      <Route path='/warning' component={Warning} handleDelete={handleDelete} />
+      <Route path='/warning' component={Warning} handleDelete={handleDelete} listings={listings}/>
     </Switch>
   )
 }
