@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { getOneListings } from '../../services/listings'
 
+import './EditListings.css'
+
 export default function EditListings(props) {
   const [formData, setFormData] = useState({
     name: "",
@@ -39,10 +41,12 @@ export default function EditListings(props) {
       updateSubmit(id, formData)
       history.push('/listings')
     }}>
-      <h3>Edit your listing </h3>
+      <h3 className='edit-listings'>Edit your listing </h3>
+      <div className='edit-listingscontainer'>
       <label><br/>
         Name:<br/>
-         <input
+          <input
+            className='edit-listingname'
           name='name'
           type='text'
           value={name}
@@ -50,15 +54,18 @@ export default function EditListings(props) {
         />
         <label><br/>
           Link:<br/> 
-           <input 
+            <input
+              id='edit-links'
+           className='edit-links'   
             name='links'
             type='text'
             value={links}
             onChange={handleChange}
           /><br/>
-          <button>Edit your listing! </button>
+          <button id='edit-lists'>Edit your listing! </button>
         </label>
-      </label>
+        </label>
+        </div>
     </form>
   )
 }

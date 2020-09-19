@@ -1,0 +1,19 @@
+.edit-listings{
+  text-align:center;
+}
+
+.edit-listingscontainer{
+  display:block;
+  text-align:center;
+}
+ 
+.edit-listingname,.edit-links {
+  height:25px;
+  width:250px;
+}
+
+#edit-lists{
+  background-color:#484141;
+  color:white;
+  font-size:20px;
+}
