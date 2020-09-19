@@ -32,7 +32,7 @@ export default function Listings(props) {
                    </Link>
                 </td>
                 <td>
-                  <Link to={`/warning`}>Delete</Link>
+                  <Link to={`/warning/${listing.id}`}>Delete</Link>
                 </td>
               </tr>
             ))}

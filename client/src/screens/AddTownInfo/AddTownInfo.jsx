@@ -9,11 +9,10 @@ export default function AddTownInfo(props) {
     townname: '',
     nativefruit: '',
     hemisphere: '',
-    user_id:'',
 
   })
-  const {gamename,townname,nativefruit,hemisphere,user_id} = formData
-  const { createSubmit } = props 
+  const {gamename,townname,nativefruit,hemisphere} = formData
+  const { createSubmitTown } = props 
   const history = useHistory()
   console.log(props)
 
@@ -32,8 +31,8 @@ export default function AddTownInfo(props) {
         <form 
           onSubmit={(e) => {
             e.preventDefault();
-            createSubmit(formData);
-            history.push('/user')
+            createSubmitTown(formData);
+            history.push('/')
 
           }}>
           <label>
@@ -58,17 +57,6 @@ export default function AddTownInfo(props) {
             onChange={handleChange}
           />
           </label>
-          <br/>
-          <label>
-            Native Fruit<br/>
-          <input
-          className='nativefruit'
-          name='nativefruit'
-          type='text'
-          value={nativefruit}
-          onChange={handleChange}
-            />
-          </label>
           <br />
           <label>
             Hemisphere<br/>
@@ -80,16 +68,16 @@ export default function AddTownInfo(props) {
           onChange={handleChange}
             />
           </label>
-          <br/>
+          <br />
           <label>
-            Id<br/>
-            <input
-              className='id'
-              name='id'
-              type='text'
-              value={user_id}
-              onChange={handleChange}
-            />  
+            Native Fruit<br/>
+          <input
+          className='nativefruit'
+          name='nativefruit'
+          type='text'
+          value={nativefruit}
+          onChange={handleChange}
+            />
           </label>
           <br />
           <button id='add'>Add your info</button>

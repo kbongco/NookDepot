@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Layout from '../../layouts/Layout.jsx'
+
 import './SignUp.css'
 
 export default function SignUp(props) {
