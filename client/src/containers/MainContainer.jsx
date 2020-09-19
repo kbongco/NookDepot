@@ -9,6 +9,7 @@ import MaterialsDetail from "../screens/MaterialsDetail/MaterialsDetail";
 import UnderConstruction from "../screens/UnderConstruction/UnderConstruction.jsx";
 import Warning from "../screens/Warning/Warning";
 import Gigs from "../screens/Gigs/Gigs";
+import GigsDetail from '../screens/GigsDetail/GigsDetail'
 import AddTownInfo from "../screens/AddTownInfo/AddTownInfo";
 import UserTownInfo from "../screens/UserInfo/UserInfo";
 
@@ -97,6 +98,7 @@ export default function MainContainer(props) {
         <Listings listings={listings} />
       </Route>
 
+      <Route path='/gigs/:id' render={() => <GigsDetail gigs={gigs} />} />
 
       <Route path="/gigs">
         <Gigs  gigs={gigs} />
