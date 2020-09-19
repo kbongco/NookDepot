@@ -51,11 +51,11 @@ export default function AddTownInfo(props) {
           <label>
             Town Name: <br/>
           <input 
-            className='hemisphere'
+            className='townname'
             name='townname'
             type='text'
-              value={townname}
-              onChange={handleChange}
+            value={townname}
+            onChange={handleChange}
           />
           </label>
           <br/>
@@ -69,12 +69,23 @@ export default function AddTownInfo(props) {
           onChange={handleChange}
             />
           </label>
+          <br />
+          <label>
+            Hemisphere<br/>
+          <input
+          className='hemisphere'
+          name='hemisphere'
+          type='text'
+          value={hemisphere}
+          onChange={handleChange}
+            />
+          </label>
           <br/>
           <label>
             Id<br/>
             <input
               className='id'
-              id='id-field'
+              name='id'
               type='text'
               value={user_id}
               onChange={handleChange}

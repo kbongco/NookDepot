@@ -15,7 +15,7 @@ import UserTownInfo from '../screens/UserInfo/UserInfo'
 import { getAllMaterials } from '../services/materials'
 import { getAllGigs } from '../services/gigs'
 import { getAllListings, postListings, putListings, deleteListings } from '../services/listings'
-import { postTownInfo, getOneTownInfo, putTownInfo, getAllTownInfo  } from '../services/towninfo.js'
+import { postTownInfo, getOneTownInfo, putTownInfo  } from '../services/towninfo.js'
 
 
 export default function MainContainer(props) {
@@ -43,16 +43,10 @@ export default function MainContainer(props) {
       updateListings(ListingsArray)
     }
 
-    const fetchAllTownInfo = async () => {
-      const TownInfoArray = await
-        getAllTownInfo();
-      updateTownInfo(TownInfoArray)
-    }
     
     fetchGigs();
     fetchMaterials();
     fetchListings();
-    fetchAllTownInfo()
   }, [])
 
 
@@ -94,7 +88,7 @@ export default function MainContainer(props) {
       <Route path='/recipes' component={UnderConstruction} />
       <Route path='/test' component={UserTownInfo}/>
       <Route path='/warning' component={Warning} handleDelete={handleDelete} listings={listings} />
-      <Route path='/addtownInfo' component={AddTownInfo} />
+      <Route path='/users/:id/addtownInfo'><AddTownInfo createSubmit/></Route>
     </Switch>
   )
 }
