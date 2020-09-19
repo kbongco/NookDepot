@@ -1,1 +1,25 @@
+.town-info{
+  text-align:center;
+  font-size:24px;
+}
+.towninfo-container{
+  display:block;
+  text-align:center;
+}
 
+.game-name,.hemisphere, .nativefruit, .townname, .id{
+  height:25px;
+  width:250px;
+  margin-bottom:50px;
+}
+
+#id-field {
+  margin-bottom:50px;
+}
+
+#add {
+  background-color:#484141;
+  color:white;
+  font-size:20px;
+  margin-bottom:50px;
+}

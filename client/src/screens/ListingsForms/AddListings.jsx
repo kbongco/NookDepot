@@ -46,6 +46,7 @@ export default function AddListings(props) {
           <label>
             Link to your listings
             <input
+              id='edit-links'
               className="links"
               name="links"
               type="text"
@@ -54,7 +55,7 @@ export default function AddListings(props) {
             />
           </label>
           <br />
-          <button>Create </button>
+          <button id='listing'>Add your Listing</button>
         </form>
       </div>
     </>

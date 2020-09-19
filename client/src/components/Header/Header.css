@@ -28,3 +28,7 @@ nav a{
   color:black;
   margin:0px 25px 0px 25px;
 }
+
+.search-container{
+  width:250px;
+}

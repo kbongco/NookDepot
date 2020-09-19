@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { getOneListings } from '../../services/listings'
 
+import './EditListings.css'
+
 export default function EditListings(props) {
   const [formData, setFormData] = useState({
     name: "",
@@ -18,33 +20,52 @@ export default function EditListings(props) {
       const singleListing = listings.find(listing => listing.id === Number(id))
       setFormData({
         name: singleListing.name,
-        link: singleListing.links
+        links: singleListing.links
       })
     }
     if (listings.length) {
       preFilForm();
     }
   }, [listings])
-  
+
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ name: value})
+    const { name, value } = e.target 
+    const editData = { [name]: value }
+    setFormData((formData) => {
+      return {...formData, ...editData}
+    })
   }
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
-      updateSubmit(id,formData)
+      updateSubmit(id, formData)
+      history.push('/listings')
     }}>
-      <h3>Edit your listing </h3>
-      <label>
-        Name:
-         <input
+      <h3 className='edit-listings'>Edit your listing </h3>
+      <div className='edit-listingscontainer'>
+      <label><br/>
+        Name:<br/>
+          <input
+            className='edit-listingname'
           name='name'
           type='text'
           value={name}
           onChange={handleChange}
-          />
-      </label>
+        />
+        <label><br/>
+          Link:<br/> 
+            <input
+              id='edit-links'
+           className='edit-links'   
+            name='links'
+            type='text'
+            value={links}
+            onChange={handleChange}
+          /><br/>
+          <button id='edit-lists'>Edit your listing! </button>
+        </label>
+        </label>
+        </div>
     </form>
   )
 }

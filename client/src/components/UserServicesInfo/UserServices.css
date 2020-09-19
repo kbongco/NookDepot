@@ -1,0 +1,8 @@
+.services-container{
+  display:flex;
+  flex-direction:column;
+}
+
+.top-service{
+  border-bottom: 1.5px solid;
+}
