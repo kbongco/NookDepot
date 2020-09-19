@@ -11,7 +11,7 @@ export const getOneListings = async (id) => {
 }
 
 export const putListings = async (id, formData) => {
-  const resp = await api.put(`/listings/${id}`, { name: formData, links: formData  })
+  const resp = await api.put(`/listings/${id}`,{listing:formData})
   return resp.data 
 }
 
@@ -20,8 +20,8 @@ export const postListings = async (formData) => {
   return resp.data 
 }
 
-export const deleteFood = async (id) => {
-  const resp = await api.delete(`/foods/${id}`)
+export const deleteListings= async (id) => {
+  const resp = await api.delete(`/listings/${id}`)
   return resp.data 
 }
 

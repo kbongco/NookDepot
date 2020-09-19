@@ -1,0 +1,14 @@
+.userinfo-container{
+  background:#F3EFEF;
+  margin-top:-20px
+}
+
+.user-towns{
+  float:right;
+}
+
+.user-gigs{
+  display:flex;
+  flex-direction:column;
+  background:#EEE4E4;
+}

@@ -1,23 +1,18 @@
-.listing{
+.edit-listings{
   text-align:center;
-  font-size: 32px;
 }
 
-.register-container{
+.edit-listingscontainer{
   display:block;
   text-align:center;
 }
-
-.listing-name,  .links{
+ 
+.edit-listingname,.edit-links {
   height:25px;
   width:250px;
 }
 
-#edit-links{
-  margin-bottom:50px
-}
-
-#listing {
+#edit-lists{
   background-color:#484141;
   color:white;
   font-size:20px;

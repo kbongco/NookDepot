@@ -18,11 +18,6 @@ function App() {
 
   useEffect(() => {
 
-    // const loggedInUser = localStorage.getItem('authToken');
-    // if (loggedInUser) {
-    //   const foundUser = JSON.parse(loggedInUser);
-    //   updateCurrentUser(foundUser)
-    // }
     const handleVerify = async () => {
       const userData = await verifyUser();
       updateCurrentUser(userData);
@@ -56,7 +51,7 @@ function App() {
         handleLogout={handleLogout}>
         <Switch>
           <Route path='/signup'>
-            <SignUp />
+            <SignUp registerSubmit={registerSubmit}/>
           </Route>
           <Route path='/login'>
             <Login loginSubmit={loginSubmit}/>
