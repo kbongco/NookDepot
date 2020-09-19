@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom'
 
 
 export default function AddTownInfo(props) {
@@ -71,7 +72,7 @@ export default function AddTownInfo(props) {
             <input
               className='id'
               type='text'
-              value={id}
+              value={user_id}
               onChange={handleChange}
             />  
           </label>

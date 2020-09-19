@@ -9,20 +9,23 @@ import MaterialsDetail from '../screens/MaterialsDetail/MaterialsDetail'
 import UnderConstruction from "../screens/UnderConstruction/UnderConstruction.jsx";
 import Warning from '../screens/Warning/Warning'
 import Gigs from '../screens/Gigs/Gigs'
+import AddTownInfo from '../screens/AddTownInfo/AddTownInfo'
 
 import { getAllMaterials } from '../services/materials'
 import { getAllGigs } from '../services/gigs'
 import { getAllListings, postListings, putListings, deleteListings } from '../services/listings'
+import { postTownInfo, getOneTownInfo, putTownInfo, getAllTownInfo  } from '../services/towninfo.js'
 
 
 export default function MainContainer(props) {
   const [materials, updateMaterials] = useState([]);
   const [gigs, updateGigs] = useState([]);
   const [listings, updateListings] = useState([])
+  const [townInfo, updateTownInfo] = useState([])
 
   console.log(gigs)
   console.log(listings)
-
+  console.log(townInfo)
   console.log(materials)
   useEffect(() => {
     const fetchMaterials = async () => {
@@ -38,11 +41,19 @@ export default function MainContainer(props) {
       const ListingsArray = await getAllListings();
       updateListings(ListingsArray)
     }
+
+    const fetchAllTownInfo = async () => {
+      const TownInfoArray = await
+        getAllTownInfo();
+      updateTownInfo(TownInfoArray)
+    }
     
     fetchGigs();
     fetchMaterials();
     fetchListings();
+    fetchAllTownInfo()
   }, [])
+
 
   const createSubmit = async (formData) => {
     const newListing = await postListings(formData)
@@ -58,6 +69,9 @@ export default function MainContainer(props) {
     updateListings(prevState => prevState.filter(listings => listings.id !== id))
   }
 
+ 
+
+  
 
 
   return (
@@ -77,8 +91,9 @@ export default function MainContainer(props) {
       <Route path='/materials' render={(props) => <Materials{...props} materials={materials} />} />
       <Route exact path='/materials/:id' materials={materials} component={MaterialsDetail}></Route>
       <Route path='/recipes' component={UnderConstruction} />
-      <Route path='/test' render={(props) => <MaterialsDetail{...props} materials={materials}/>} />
-      <Route path='/warning' component={Warning} handleDelete={handleDelete} listings={listings}/>
+      <Route path='/test'/>
+      <Route path='/warning' component={Warning} handleDelete={handleDelete} listings={listings} />
+      <Route path='/addtownInfo' component={AddTownInfo} />
     </Switch>
   )
 }
