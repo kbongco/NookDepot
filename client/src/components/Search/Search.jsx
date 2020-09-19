@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 
+
 export default function Search(props) {
   const [searchTerm, updateSearchTerm] = useState('')
   const [searchTermResults, updateSearchTermResults] = useState('')
@@ -11,7 +12,9 @@ export default function Search(props) {
 
   return ( 
     <div className='search-bar'>
-      <input type='text'
+      <input
+        className='search'
+        type='text'
         value={searchTerm}
         onChange={handleChange}
       />

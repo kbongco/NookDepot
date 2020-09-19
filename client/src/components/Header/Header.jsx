@@ -10,7 +10,9 @@ export default function Header(props) {
     <header>
       <div className="header-content">
         <h1 className='nookdepot'>NookDepot</h1>
-        <Search/>
+        <div className='search-container'>
+          <Search />
+          </div>
         <nav className='nav'>
           <ul className='navLinks'>
             <li className='page-Links'>
