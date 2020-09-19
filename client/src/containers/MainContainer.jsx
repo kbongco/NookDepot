@@ -102,9 +102,8 @@ export default function MainContainer(props) {
         <Gigs  gigs={gigs} />
       </Route>
 
-      <Route path="/materials/:id">
-        <MaterialsDetail materials={materials} />
-      </Route>
+      <Route path="/materials/:id" render={()=>  <MaterialsDetail materials={materials} /> }/>
+  
 
       <Route path="/materials">
         <Materials materials={materials} />
