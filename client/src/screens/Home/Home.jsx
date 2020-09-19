@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../../layouts/Layout.jsx'
 import Subscribe from '../../components/Subscribe/Subscribe.jsx'
 import './Home.css';
 

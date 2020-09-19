@@ -10,6 +10,7 @@ import UnderConstruction from "../screens/UnderConstruction/UnderConstruction.js
 import Warning from '../screens/Warning/Warning'
 import Gigs from '../screens/Gigs/Gigs'
 import AddTownInfo from '../screens/AddTownInfo/AddTownInfo'
+import UserTownInfo from '../screens/UserInfo/UserInfo'
 
 import { getAllMaterials } from '../services/materials'
 import { getAllGigs } from '../services/gigs'
@@ -91,7 +92,7 @@ export default function MainContainer(props) {
       <Route path='/materials' render={(props) => <Materials{...props} materials={materials} />} />
       <Route exact path='/materials/:id' materials={materials} component={MaterialsDetail}></Route>
       <Route path='/recipes' component={UnderConstruction} />
-      <Route path='/test'/>
+      <Route path='/test' component={UserTownInfo}/>
       <Route path='/warning' component={Warning} handleDelete={handleDelete} listings={listings} />
       <Route path='/addtownInfo' component={AddTownInfo} />
     </Switch>
