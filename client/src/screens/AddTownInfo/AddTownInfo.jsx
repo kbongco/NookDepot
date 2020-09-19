@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom'
+import './AddTownInfo.css'
 
 
 export default function AddTownInfo(props) {
@@ -36,7 +37,7 @@ export default function AddTownInfo(props) {
 
           }}>
           <label>
-            InGame Name:
+            InGame Name:<br/>
           
           <input 
             className='game-name'
@@ -48,7 +49,7 @@ export default function AddTownInfo(props) {
           </label>
           <br />
           <label>
-            Town Name:
+            Town Name: <br/>
           <input 
             className='hemisphere'
             name='townname'
@@ -57,8 +58,9 @@ export default function AddTownInfo(props) {
               onChange={handleChange}
           />
           </label>
+          <br/>
           <label>
-            Native Fruit
+            Native Fruit<br/>
           <input
           className='nativefruit'
           name='nativefruit'
@@ -67,17 +69,19 @@ export default function AddTownInfo(props) {
           onChange={handleChange}
             />
           </label>
+          <br/>
           <label>
-            Id
+            Id<br/>
             <input
               className='id'
+              id='id-field'
               type='text'
               value={user_id}
               onChange={handleChange}
             />  
           </label>
           <br />
-          <button>Add your info</button>
+          <button id='add'>Add your info</button>
 
           
           </form>
