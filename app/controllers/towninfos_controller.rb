@@ -10,7 +10,8 @@ class TowninfosController < ApplicationController
 
   # GET /towninfos/1
   def show
-    render json: @towninfos
+    @towninfo = Towninfo.find(params[:id])
+    render json: @towninfo
   end
 
   # POST /towninfos
@@ -18,7 +19,7 @@ class TowninfosController < ApplicationController
     @towninfos = Towninfo.new(towninfo_params)
 
     if @towninfos.save
-      render json: @towninfos, status: :created
+      render json: @towninfos,status: :created
     else
       render json: @towninfos.errors, status: :unprocessable_entity
     end

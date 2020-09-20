@@ -33,6 +33,7 @@ export default function UserTownInfo(props) {
         <p>Town Name: {townInfo.townname}</p>
         <p>Hemisphere: {townInfo.hemisphere}</p>
         <p>Native Fruit: {townInfo.nativefruit}</p>
+        <p>Add | Edit</p>
 
 
       </div>
