@@ -4,6 +4,8 @@ import UserServices from '../../components/UserServicesInfo/UserServices'
 import './UserInfo.css'
 
 export default function UserInfo(props) {
+  const { towninfo } = props;
+  console.log(props)
   return (
     <>
     <div className='userinfo-container'>

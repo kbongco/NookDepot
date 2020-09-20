@@ -27,6 +27,7 @@ export default function MaterialsDetail(props) {
       <p>{material.notes}</p>
         <p>{material.season}</p>
         <button>Add to my listing</button>
+        <button>Add to my wish-list</button>
       </div>
     </div>
   );

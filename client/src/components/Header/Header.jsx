@@ -56,7 +56,7 @@ export default function Header(props) {
             <li className="page-Links">
               {
                 currentUser ?
-                  <div> <Link exact to='/login'>
+                  <div> <Link exact to='/users'>
                     Your Profile</Link> | <Link exact to={`/listings/new`}>Add Listing</Link> | 
                     <button onClick={props.handleLogout}>Logout</button>
                   </div> : <div><Link exact to='/login'>
