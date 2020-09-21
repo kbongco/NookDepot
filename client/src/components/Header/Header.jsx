@@ -48,6 +48,7 @@ export default function Header(props) {
                 DIY Recipes
               </Link>
             </li>
+            {/* Remove Test link prior to presentation */}
             <li className='page-Links'>
               <Link exact to='/test'>
                 Test Screens

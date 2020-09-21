@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Layout from "../../layouts/Layout.jsx";
 import "./Login.css";
 
 export default function Login(props) {
