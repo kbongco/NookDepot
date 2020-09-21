@@ -35,8 +35,13 @@ export default function MainContainer(props) {
   const [townInfo, updateTownInfo] = useState([]);
   const history = useHistory();
 
+  const user_id = localStorage.getItem('userid')
 
-  console.log(townInfo);
+  // const user_id = props.currentUser 
+  // const { id } = user_id
+  // console.log(id)
+  
+  // console.log(user_id);
 
   useEffect(() => {
     const fetchMaterials = async () => {
@@ -88,12 +93,12 @@ export default function MainContainer(props) {
     history.push("/listings");
   };
 
-  const createSubmitTown = async (formData) => {
-    const newTownInfo = await postTownInfo(formData);
+  const createSubmitTown = async ( formData) => {
+    const newTownInfo = await postTownInfo(user_id,formData);
     updateTownInfo((prevState) => [...prevState, newTownInfo]);
     history.push('/users')
   };
-
+  
   return (
     <Switch>
       <Route path="/listings/new">
@@ -125,13 +130,15 @@ export default function MainContainer(props) {
         <Warning listings={listings} handleDelete={handleDelete} />
       </Route>
 
-      <Route path="/users/:user_id/towninfos">
+      <Route exact path="/users/:user_id/towninfos">
         <AddTownInfo createSubmitTown={createSubmitTown} />
       </Route>
 
       <Route path="/tools" component={UnderConstruction} />
 
-      <Route path="/users" component={UserTownInfo} townInfo={townInfo}/>
+      <Route path="/users/:id" component={UserTownInfo} townInfo={townInfo} />
+      
+      <Route path='/users/:user_id/towninfos/:id' component={UserTownInfo} townInfo={townInfo} />
 
       <Route path="/recipes" component={UnderConstruction} />
       

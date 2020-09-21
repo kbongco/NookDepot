@@ -17,6 +17,7 @@ class TowninfosController < ApplicationController
   # POST /towninfos
   def create
     @towninfos = Towninfo.new(towninfo_params)
+    @towninfos.user = @current_user 
 
     if @towninfos.save
       render json: @towninfos,status: :created
@@ -38,7 +39,7 @@ class TowninfosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_towninfo
-      @towninfo = Towninfo.find(params[:id])
+      @towninfo = @current_user.towninfos.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.

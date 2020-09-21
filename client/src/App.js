@@ -56,7 +56,7 @@ function App() {
           <Route path='/login'>
             <Login loginSubmit={loginSubmit}/>
           </Route>
-          <MainContainer />
+          <MainContainer currentUser={currentUser} />
           </Switch>
       </Layout>
       

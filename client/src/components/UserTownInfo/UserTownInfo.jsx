@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, matchPath } from 'react-router-dom';
 import { getOneTownInfo } from '../../services/towninfo.js'
 
 export default function UserTownInfo(props) {
-  const params = useParams();
   const [townInfo, updateTownInfo] = useState('')
 
-  const { id } = useParams
-  console.log(props)
-  console.log(townInfo)
+  const match = matchPath('/users/1/towninfos/1', {
+    path: '/users/:user_id/towninfos/:id',
+    exact: true,
+  })
 
+ 
   useEffect(() => {
     const fetchTowns = async () => {
       const singleTown = await 
-        getOneTownInfo(id)
+         getOneTownInfo(match.params.user_id,match.params.id)
       updateTownInfo(singleTown)
     }
     fetchTowns();
+
   }, [])
 
   return (
@@ -34,6 +36,7 @@ export default function UserTownInfo(props) {
         <p>Hemisphere: {townInfo.hemisphere}</p>
         <p>Native Fruit: {townInfo.nativefruit}</p>
         <p>Add | Edit</p>
+
 
 
       </div>

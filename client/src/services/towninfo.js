@@ -8,12 +8,12 @@ export const postTownInfo = async (user_id,formData) => {
 }
 
 
-export const getOneTownInfo = async (user_id) => {
-  const resp = await api.get(`/users/${user_id}/towninfos`)
+export const getOneTownInfo = async (user_id, id) => {
+  const resp = await api.get(`/users/${user_id}/towninfos/${id}`)
   return resp.data
 }
 
-export const putTownInfo = async (id, formData) => {
-  const resp = await api.put(`/users/${id}/towninfos/${id}`,{towninfos:formData})
+export const putTownInfo = async (user_id, formData, id) => {
+  const resp = await api.put(`/users/${user_id}/towninfos/${id}`,{towninfos:formData})
   return resp.data 
 }

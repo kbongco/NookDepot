@@ -6,6 +6,7 @@ import './MaterialsDetail.css'
 
 export default function MaterialsDetail(props) {
   const [material, updateMaterials] = useState("");
+  const [shop, updateShop] = useState([]);
   const { id } = useParams();
   const { materials } = props;
 
@@ -19,6 +20,13 @@ export default function MaterialsDetail(props) {
     fetchMaterial();
   }, []);
 
+  const addToShop = (material) => {
+    console.log('we added to our listing')
+    updateShop([...shop, material]);
+  }
+
+
+
   return (
     <div className='materials-detail'>
       <img className="materials-detail-img" src={material.imgURL} />
@@ -26,8 +34,9 @@ export default function MaterialsDetail(props) {
       <h1>{material.name}</h1>
       <p>{material.notes}</p>
         <p>{material.season}</p>
-        <button>Add to my listing</button>
+        <button onClick={() => addToShop(material)}>Add to my shop</button>
         <button>Add to my wish-list</button>
+        <button>Go to your shop({shop.length})</button>
       </div>
     </div>
   );
