@@ -32,7 +32,7 @@ export default function AddTownInfo(props) {
           onSubmit={(e) => {
             e.preventDefault();
             createSubmitTown(formData);
-            history.push('/')
+            history.push('/users/:id')
 
           }}>
           <label>
