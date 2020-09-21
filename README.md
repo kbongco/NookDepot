@@ -52,7 +52,6 @@ Also thank you to my friends who provided me with some assets I can use as well!
 -have a details page about the materials [Tools,Garden,Services are PMVP]<br>
 -have a directory showing each User's Shop<br>
 -Have an editable profile page and delete info as well. 
--have a search bar up and running<br> 
 
 <br>
 
