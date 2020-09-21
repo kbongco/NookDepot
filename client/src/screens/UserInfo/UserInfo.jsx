@@ -13,9 +13,12 @@ export default function UserInfo(props) {
     </div>
 
     <div className='user-gigs'>
-       <UserServices /> 
+        <UserServices towninfo={towninfo}/> 
     </div>
     
+      <div className='items-offered'>
+
+      </div>
     </>
   )
 }
