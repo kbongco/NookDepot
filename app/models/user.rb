@@ -6,4 +6,5 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }
 
   has_many :listings
+  has_one :towninfo
 end

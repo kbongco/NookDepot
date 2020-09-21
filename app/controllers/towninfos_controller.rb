@@ -1,5 +1,6 @@
 class TowninfosController < ApplicationController
-  before_action :set_towninfo, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:show, :create,:update, :destroy]
+  before_action :set_towninfo, only: [ :update, :destroy]
 
   # GET /towninfos
   def index
@@ -10,8 +11,7 @@ class TowninfosController < ApplicationController
 
   # GET /towninfos/1
   def show
-    @towninfo = Towninfo.find(params[:id])
-    render json: @towninfo
+    render json: @current_user.towninfo
   end
 
   # POST /towninfos
@@ -39,7 +39,7 @@ class TowninfosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_towninfo
-      @towninfo = @current_user.towninfos.find(params[:id])
+      @towninfo = @current_user.towninfo
     end
 
     # Only allow a trusted parameter "white list" through.
