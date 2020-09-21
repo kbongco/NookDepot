@@ -34,6 +34,8 @@ export default function Header(props) {
               <Link exact to="/gigs">
                 Gigs
               </Link>
+              </li>
+            <li className='page-Links'>
               <Link exact to='/Garden'>
                 Garden
               </Link>
