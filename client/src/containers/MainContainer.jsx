@@ -27,6 +27,7 @@ import {
   putTownInfo,
 } from "../services/towninfo.js";
 
+
 export default function MainContainer(props) {
   const [materials, updateMaterials] = useState([]);
   const [gigs, updateGigs] = useState([]);
@@ -34,10 +35,9 @@ export default function MainContainer(props) {
   const [townInfo, updateTownInfo] = useState([]);
   const history = useHistory();
 
-  console.log(gigs);
-  console.log(listings);
+
   console.log(townInfo);
-  console.log(materials);
+
   useEffect(() => {
     const fetchMaterials = async () => {
       const materialsArray = await getAllMaterials();
@@ -53,9 +53,18 @@ export default function MainContainer(props) {
       updateListings(ListingsArray);
     };
 
+    const fetchTowns = async () => {
+      const TownsArray = await
+      getOneTownInfo();
+      updateTownInfo(TownsArray)
+      
+    }
+
     fetchGigs();
     fetchMaterials();
     fetchListings();
+    fetchTowns();
+
   }, []);
 
   const createSubmit = async (formData) => {
@@ -82,6 +91,7 @@ export default function MainContainer(props) {
   const createSubmitTown = async (formData) => {
     const newTownInfo = await postTownInfo(formData);
     updateTownInfo((prevState) => [...prevState, newTownInfo]);
+    history.push('/users')
   };
 
   return (
@@ -121,7 +131,7 @@ export default function MainContainer(props) {
 
       <Route path="/tools" component={UnderConstruction} />
 
-      <Route path="/test" component={UserTownInfo} />
+      <Route path="/users" component={UserTownInfo} townInfo={townInfo}/>
 
       <Route path="/recipes" component={UnderConstruction} />
       
