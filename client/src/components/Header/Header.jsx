@@ -60,7 +60,7 @@ export default function Header(props) {
               {
                 currentUser ?
                   <div> <Link exact to='/users'>
-                    Your Profile</Link> | <Link exact to={`/listings/new`}>Add Listing</Link> | 
+                    Your Profile</Link> | <Link exact to={`/listings/new`}>Add Listing</Link> | <Link exact to='/user/:user_id/listings'><img src="https://i.ibb.co/RNrKwsN/Stall.png" alt="Stall" border="0" height='30px' width='30px'/></Link> |
                     <button onClick={props.handleLogout}>Logout</button>
                   </div> : <div><Link exact to='/login'>
                     Login</Link>  <Link exact to='/signup'>Sign Up</Link></div>}
@@ -72,3 +72,5 @@ export default function Header(props) {
     </header>
   )
 }
+
+{/* <img src="https://i.ibb.co/RNrKwsN/Stall.png" alt="Stall" border="0" max-height='25px' max-width='25px'/> */}

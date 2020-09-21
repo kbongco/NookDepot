@@ -14,11 +14,10 @@ export default function UserInfo(props) {
 
     <div className='user-gigs'>
         <UserServices towninfo={towninfo}/> 
-    </div>
-    
-      <div className='items-offered'>
-
       </div>
+      <div className='listings'>
+        <p>Follow the Link here to view this user's listings!</p>
+    </div>
     </>
   )
 }
