@@ -11,7 +11,7 @@ import Warning from "../screens/Warning/Warning";
 import Gigs from "../screens/Gigs/Gigs";
 import GigsDetail from '../screens/GigsDetail/GigsDetail'
 import AddTownInfo from "../screens/AddTownInfo/AddTownInfo";
-import UserTownInfo from "../screens/UserInfo/UserInfo";
+import UserInfo from "../screens/UserInfo/UserInfo";
 
 import { getAllMaterials } from "../services/materials";
 import { getAllGigs } from "../services/gigs";
@@ -32,11 +32,18 @@ export default function MainContainer(props) {
   const [materials, updateMaterials] = useState([]);
   const [gigs, updateGigs] = useState([]);
   const [listings, updateListings] = useState([]);
-  const [townInfo, updateTownInfo] = useState([]);
+  const [townInfo, updateTownInfo] = useState(null);
   const history = useHistory();
 
+  const { currentUser } = props
 
-  console.log(townInfo);
+  const user_id = localStorage.getItem('userid')
+
+  // const user_id = props.currentUser 
+  // const { id } = user_id
+  // console.log(id)
+  
+  // console.log(user_id);
 
   useEffect(() => {
     const fetchMaterials = async () => {
@@ -54,18 +61,19 @@ export default function MainContainer(props) {
     };
 
     const fetchTowns = async () => {
-      const TownsArray = await
-      getOneTownInfo();
+      const TownsArray = await getOneTownInfo();
       updateTownInfo(TownsArray)
       
     }
 
-    fetchGigs();
-    fetchMaterials();
-    fetchListings();
-    fetchTowns();
+    if (currentUser) {
+      fetchGigs()
+      fetchMaterials();
+      fetchListings();
+      fetchTowns();
+    };
 
-  }, []);
+  }, [currentUser]);
 
   const createSubmit = async (formData) => {
     const newListing = await postListings(formData);
@@ -88,8 +96,8 @@ export default function MainContainer(props) {
     history.push("/listings");
   };
 
-  const createSubmitTown = async (formData) => {
-    const newTownInfo = await postTownInfo(formData);
+  const createSubmitTown = async ( formData) => {
+    const newTownInfo = await postTownInfo(user_id,formData);
     updateTownInfo((prevState) => [...prevState, newTownInfo]);
     history.push('/users')
   };
@@ -125,13 +133,16 @@ export default function MainContainer(props) {
         <Warning listings={listings} handleDelete={handleDelete} />
       </Route>
 
+
       <Route path="/users/:user_id/towninfos">
         <AddTownInfo createSubmitTown={createSubmitTown} />
       </Route>
 
+      <Route path="/users/:id">
+      <UserInfo townInfo={townInfo} currentUser={currentUser}/>
+      </Route>
       <Route path="/tools" component={UnderConstruction} />
 
-      <Route path="/users" component={UserTownInfo} townInfo={townInfo}/>
 
       <Route path="/recipes" component={UnderConstruction} />
       

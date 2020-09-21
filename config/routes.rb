@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   resources :create_gigs
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
-  post '/users/:id/towninfos', to:
-  'towninfos#create'
   # get '/users/:id/towninfos' to 
   get '/towninfos', to: 'towninfos#show'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
