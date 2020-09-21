@@ -32,7 +32,7 @@ export default function MainContainer(props) {
   const [materials, updateMaterials] = useState([]);
   const [gigs, updateGigs] = useState([]);
   const [listings, updateListings] = useState([]);
-  const [townInfo, updateTownInfo] = useState(null);
+  const [townInfo, updateTownInfo] = useState('');
   const history = useHistory();
 
   const { currentUser } = props
