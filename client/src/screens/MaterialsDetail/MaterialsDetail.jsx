@@ -20,10 +20,7 @@ export default function MaterialsDetail(props) {
     fetchMaterial();
   }, []);
 
-  const addToShop = (material) => {
-    console.log('we added to our listing')
-    updateShop([...shop, material]);
-  }
+
 
 
 
@@ -34,9 +31,8 @@ export default function MaterialsDetail(props) {
       <h1>{material.name}</h1>
       <p>{material.notes}</p>
         <p>{material.season}</p>
-        <button onClick={() => addToShop(material)}>Add to my shop</button>
+        <button >Add to my shop</button>
         <button>Add to my wish-list</button>
-        <button>Go to your shop({shop.length})</button>
       </div>
     </div>
   );

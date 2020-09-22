@@ -48,18 +48,17 @@ Also thank you to my friends who provided me with some assets I can use as well!
 -have User Authentication<br>
 -have a User page that's a "shop" showing items owned and selling/looking for 
 -have a page showing materials [Tools, Garden and Services are PMVP]<br>
--have a details page where you can press a button to add to a section in the shop<br>
 -have a details page about the materials [Tools,Garden,Services are PMVP]<br>
 -have a directory showing each User's Shop<br>
--Have an editable profile page and delete info as well. 
+-Have an editable profile page. 
 
 <br>
 
 ### Goals
 CRUD will be achieved in the following places: 
 -Creating a Listing in the Directory, being able to Edit/Delete as well<br>
--Creating Town Info and editing it in Profile page<br>
--Deleting Items from listing<br>
+-Creating Town Info in Profile page<br>
+
 
 <br>
 

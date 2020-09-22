@@ -12,6 +12,7 @@ import Gigs from "../screens/Gigs/Gigs";
 import GigsDetail from '../screens/GigsDetail/GigsDetail'
 import AddTownInfo from "../screens/AddTownInfo/AddTownInfo";
 import UserInfo from "../screens/UserInfo/UserInfo";
+import UserForSaleAndWant from '../components/UserForSaleWant/UserForSaleAndWant'
 
 import { getAllMaterials } from "../services/materials";
 import { getAllGigs } from "../services/gigs";
@@ -136,6 +137,10 @@ export default function MainContainer(props) {
 
       <Route path="/users/:user_id/towninfos">
         <AddTownInfo createSubmitTown={createSubmitTown} />
+      </Route>
+
+      <Route path='/users/:user_id/listings'>
+        <UserForSaleAndWant />
       </Route>
 
       <Route path="/users/:id">

@@ -50,17 +50,11 @@ export default function Header(props) {
                 DIY Recipes
               </Link>
             </li>
-            {/* Remove Test link prior to presentation */}
-            <li className='page-Links'>
-              <Link exact to='/test'>
-                Test Screens
-              </Link>
-            </li>
             <li className="page-Links">
               {
                 currentUser ?
                   <div> <Link exact to='/users/:id'>
-                    Your Profile</Link> | <Link exact to={`/listings/new`}>Add Listing</Link> | <Link exact to='/user/:user_id/listings'><img src="https://i.ibb.co/RNrKwsN/Stall.png" alt="Stall" border="0" height='30px' width='30px'/></Link> |
+                    Your Profile</Link> | <Link exact to={`/listings/new`}>Add Listing</Link> | <Link exact to='/users/:user_id/listings'><img src="https://i.ibb.co/RNrKwsN/Stall.png" alt="Stall" border="0" height='30px' width='30px'/></Link> |
                     <button onClick={props.handleLogout}>Logout</button>
                   </div> : <div><Link exact to='/login'>
                     Login</Link>  <Link exact to='/signup'>Sign Up</Link></div>}
