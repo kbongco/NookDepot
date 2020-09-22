@@ -46,3 +46,9 @@
   padding-top:15px;
   padding-bottom:200px;
 }
+
+@media screen and (max-width:768px){
+  .subscribe-here{
+    background-color:#CFBAE1;
+  }
+  }

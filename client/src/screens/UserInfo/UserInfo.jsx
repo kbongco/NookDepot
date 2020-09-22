@@ -1,6 +1,7 @@
 import React from 'react';
 import UserTownInfo from '../../components/UserTownInfo/UserTownInfo.jsx'
 import UserServices from '../../components/UserServicesInfo/UserServices'
+import { Link } from 'react-router-dom'
 import './UserInfo.css'
 
 export default function UserInfo(props) {
@@ -16,7 +17,7 @@ export default function UserInfo(props) {
         <UserServices townInfo={townInfo}/> 
       </div>
       <div className='listings'>
-        <p>Follow the Link here to view this user's listings!</p>
+        <p>Follow the Link <Link to='/users/:user_id/listings'>here</Link> to view this user's listings!</p>
     </div>
     </>
   )
