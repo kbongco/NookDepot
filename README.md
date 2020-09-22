@@ -165,23 +165,23 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Implement Backend    |    H     |    2     |    TBD    |    TBD   |
-| Backend CRUD  |    H     |     2  |     TBD    |     TBD     |
-| Setup Authentication |    H     |     3  |     TBD    |     TBD     |
-| BackEnd Routes |    H     |    1.5   |     TBD  |     TBD     |
-| FrontEnd Routes|    M     |     2   |     TBD   |     TBD     |
-| FrontEnd: Work on Layout Screen|    H     |    3  |     TBD    |     TBD     |
-| FrontEnd: Work on Layout Components|    H     |     2  |     TBD    |     TBD     |
-| FrontEnd: Work on Email Form in Home Component|    L    |    1   |     TBD    |     TBD     |
-| FrontEnd: Work on Directory Screen + Components |    H     |     2   |     TBD    |     TBD     |
-| FrontEnd: Work Directory CRUD |    H     |     2.5  |    TBD  |     TBD     |
-| FrontEnd: Work on Results Component |    L    |     2   |     TBD    |     TBD     |
-| FrontEnd: Work on Results Details Component |    L    |     2.5   |     TBD    |     TBD     |
-| FrontEnd: Work on UserPage Components|    L    |     4  |     TBD    |     TBD     |
-| FrontEnd: Work on UserPage CRUD |    H     |     4  |     TBD    |     TBD     |
-| Styling |    M    |     4  |     TBD    |     TBD     |
-| Testing|    H     |     4   |     TBD    |     TBD     |
-| Deployment |    H     |     2  |     TBD    |     TBD     |
+| Implement Backend    |    H     |    2     |   3   |   3   |
+| Backend CRUD  |    H     |     2  |     3    |     3     |
+| Setup Authentication |    H     |     3  |     3   |     3    |
+| BackEnd Routes |    H     |    1.5   |    2 |    2    |
+| FrontEnd Routes|    M     |     3  |     3   |    3     |
+| FrontEnd: Work on Layout Screen|    H     |    3  |     2   |    2    |
+| FrontEnd: Work on Layout Components|    H     |     2.5 |     2.5   |    2.5    |
+| FrontEnd: Work on Email Form in Home Component|    L    |    1   |     .5    |     .5    |
+| FrontEnd: Work on Directory Screen + Components |    H     |     3   |     3    |    3    |
+| FrontEnd: Work Directory CRUD |    H     |     2.5  |    3  |     3     |
+| FrontEnd: Work on Results Component |    L    |     2   |     2    |    2     |
+| FrontEnd: Work on Results Details Component |    L    |     2  |     2   |     2    |
+| FrontEnd: Work on UserPage Components|    L    |     4  |    3    |     3    |
+| FrontEnd: Work on UserPage Create |    H     |     4  |    6    |     6     |
+| Styling |    M    |     4  |     2.5   |   2.5    |
+| Testing|    H     |     4   |    4  |    4    |
+| Deployment |    H     |     2  |     2    |    2    |
 | TOTAL               |          |     43.5 hrs      |     TBD    |     TBD     |
 
 
